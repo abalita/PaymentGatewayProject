@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>BootsFaces Basic Page</title>
+    </h:head>
+    <h:body>
+        
+        <h:form>
+            
+            <p:messages showDetail="true"/>
+            <p:captcha label="Captcha" />
+            <p:commandButton value="Check"  ajax="false" icon="ui-icon-check"/>
+        </h:form>
+        
+        <b:modal id="amodal" title="Modal Example Test" styleClass="modalPseudoClass"
+                 transient="true" backdrop="false" close-on-escape="false" rendered="true">
+            <p>Modal body</p>
+            <f:facet name="footer">
+                <b:button value="close" dismiss="modal" onclick="return false;"/>
+                <b:button value="Ok" look="primary" dismiss="modal" onclick="return false;"/>
+            </f:facet>
+        </b:modal>
+        <b:jumbotron>
+            <h1>Hello, world!</h1>
+            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+        </b:jumbotron>
+        <b:button outcome="testButton" value="Bookmark" icon="bookmark">  
+            <f:param name="testId" value="11" />  
+        </b:button> 
+        <b:button outcome="testButton" value="With Icon" icon="envelope">  
+            <f:param name="testId" value="22" />  
+        </b:button>  
+
+        <b:button outcome="testButton" value="" icon="envelope">  
+            <f:param name="testId" value="33" />  
+        </b:button>  
+
+        <b:button outcome="testButton" value="Bookmark" icon="envelope" disabled="true">  
+            <f:param name="testId" value="44" />  
+        </b:button>
+        <b:button value="Create an account"  onclick="$('.modalPseudoClass').modal();
+                return false;" 
+                  style="width: 250px; height: 30px" immediate="true" ></b:button>
+    </h:body>
+</html>

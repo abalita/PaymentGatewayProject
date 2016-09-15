@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui">
+
+    <body>
+        <ui:composition >                           
+            <b:panel title="Login Information" styleClass="enrollmentPanel" look="primary" collapsible="false">
+                
+                <h:panelGrid columns="4" columnClasses="label, space,value, message">                                    
+                    <p:outputLabel value="Username " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:inputText id="uname" size="50" required="true" label="Username">
+                        <p:ajax event="blur" update="unameMessage errors"/>
+                    </p:inputText>
+                    <p:message id="unameMessage" for="uname" display="icon"/>
+
+                    <p:outputLabel value="Password " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:password  id="pname" required="true"  size="50">
+                        <p:ajax event="blur" update="pnameMessage errors"/>
+                    </p:password>
+                    <p:message id="pnameMessage" for="pname" display="icon"/>
+                    
+                    <p:outputLabel value="Confirm Password " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:password id="cpassword" required="true" label="Confirm Password" size="50">
+                        <p:ajax event="blur" update="cpasswordMessage errors"/>
+                    </p:password>
+                    <p:message id="cpasswordMessage" for="cpassword" display="icon"/>
+                                        
+                </h:panelGrid>
+            </b:panel>
+        </ui:composition>
+
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}**********************************************************
+${licensePrefix}
+${licensePrefix} Copyright (c) ${date?date?string("yyyy")}
+${licensePrefix}
+${licensePrefix} Project Name: Tax Return Payment Gateway 
+${licensePrefix} Developed by: Ariel A. Balita
+${licensePrefix} Date: ${date}
+${licensePrefix} File: ${nameAndExt}
+${licensePrefix} Package: ${package}
+${licensePrefix} Version: 1.0
+${licensePrefix}
+${licensePrefix} REVISION HISTORY
+${licensePrefix} DATE         MODIFIED BY       REMARKS     VERSION
+${licensePrefix}
+${licensePrefix}************************************************************
+<#if licenseLast??>
+${licenseLast}
+</#if>
+

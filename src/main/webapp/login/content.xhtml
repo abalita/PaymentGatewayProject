@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <body >
+        <ui:composition > 
+            <h:form style="text-align: center;">   
+                <b:panel title="Login" styleClass="loginPanel" look="warning" collapsible="false" style="font-size: 12px; border-color:#FE9B09;   ">                    
+                    <b:messages id="userMessage" showDetail="false" showSummary="false" />  
+                    <p:spacer height="10px"/>
+                    <b:inputText id="username" placeholder="Username" 
+                                 required="true" requiredMessage="Username is required."
+                                 immediate="true">
+                        <f:facet name="prepend" >
+                            <b:iconAwesome name="user"/>
+                        </f:facet>  
+                        <p:ajax update="userMessage" event="blur" />
+                    </b:inputText> 
+                    <b:inputSecret id="password" placeholder="Password" 
+                                   required="true" requiredMessage="Password is required.">
+                        <f:facet name="prepend">
+                            <b:iconAwesome name="key"/>
+                        </f:facet>
+                        <p:ajax update="userMessage" event="blur" />
+                    </b:inputSecret>
+
+
+                    <h:panelGrid styleClass="loginPanel">
+                        <b:commandButton value="Submit" style="width: 250px; height: 30px;" look="warning"
+                                         action="/home/dashboard.xhtml"> 
+
+                        </b:commandButton>
+                        <p:commandLink value="Forgot password?"/>
+                        <p:spacer height="20px"/>
+                        <p:outputLabel value="Do you have an account?"/>
+                        <b:commandButton value="Create an account"  onclick="$('.modalPseudoClass').modal();return false;" 
+                                         style="width: 250px; height: 30px" immediate="true" ></b:commandButton>  
+                                         
+                    </h:panelGrid>
+                </b:panel>
+
+            </h:form>
+        </ui:composition>
+
+    </body>
+</html>

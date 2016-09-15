@@ -1,0 +1,128 @@
+body {
+    background-color: #ffffff;
+    font-size: 12px;
+    font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    color: #000000;  
+    margin: 10px;
+}
+
+h1 {
+    font-family: Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    border-bottom: 1px solid #AFAFAF; 
+    font-size:  16px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #D20005;
+}
+
+a:link, a:visited {
+    color: #045491;
+    font-weight : bold;
+    text-decoration: none;
+}
+
+a:link:hover, a:visited:hover  {
+    color: #045491;
+    font-weight : bold;
+    text-decoration : underline;
+}
+
+.borderless {
+    border: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.logo {
+    margin-top: 0;   
+    height: 80px;
+    width: 150px;    
+    z-index: 999; 
+    position: relative;    
+}
+
+#headerPanel {
+    float: left;
+    margin-left: 5px;
+}
+
+#headerTitle {
+    font-weight: bold;
+    font-size: 16px;  
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+#topline {
+    background: none repeat scroll 0 0 ;
+    height: 5px;
+    top: 0;
+}
+
+#midline {
+    background: none repeat scroll 0 0 #979797;
+    height: 1px;
+    top: 26px;
+    z-index: 0;
+}
+
+#bottomline {
+    background: none repeat scroll 0 0 #979797;
+    height: 5px;
+    bottom: 0;
+}
+
+#topline, #midline, #bottomline {
+    position: relative;
+}
+
+.welcomeLabel {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.loginPanel {
+    margin: 0 auto;
+    width: 375px;
+}
+
+.enrollmentPanel {
+    margin: 0 auto;
+    width: 800px;
+    font-size: 12px;
+}
+
+.ui-layout-resizer, .ui-layout-resizer-north, ui-layout-resizer-open, .ui-layout-resizer-north-open 
+{
+    display: none;
+}
+
+.ui-panel .ui-panel-content {
+    padding: 0;
+}
+
+.ui-layout-unit .ui-layout-unit-content{
+    padding: 0.2em 0em;
+    border: 0px none;
+    overflow: hidden !important;
+}
+
+.flat-bottom {
+    margin-bottom: 0px;
+}
+
+.navbar{
+    /*margin-bottom: 0px;*/
+    font-size: 12px;
+}
+
+.panel-title{
+    font-size: 12px
+}
+
+.panel-heading{
+        border-color:#FE9B09 !important;
+}

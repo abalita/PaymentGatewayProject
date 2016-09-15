@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui">
+
+    <body>
+        <ui:composition >                           
+            <b:panel title="Taxpayer Information" styleClass="enrollmentPanel" look="primary" collapsible="false">
+                
+                <h:panelGrid columns="4" columnClasses="label, space,value">                                    
+                    <p:outputLabel value="First Name " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:inputText id="fname" size="50" required="true" label="First Name" immediate="true">
+                        <p:ajax event="blur" update="fnameMessage errors"/>
+                    </p:inputText>
+                    <p:message id="fnameMessage" for="fname" display="icon"/>
+
+                    <p:outputLabel value="Middle Name " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:inputText  id="mname" required="true" label="Middle Name" size="50">
+                        <p:ajax event="blur" update="mnameMessage errors"/>
+                    </p:inputText>
+                    <p:message id="mnameMessage" for="mname" display="icon"/>
+                    
+                    <p:outputLabel value="Last Name " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:inputText  id="lname" required="true" label="Last Name" size="50">
+                        <p:ajax event="blur" update="lnameMessage errors"/>
+                    </p:inputText>
+                    <p:message id="lnameMessage" for="lname" display="icon"/>
+                    
+                    <p:outputLabel value="Email Address " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:inputText  id="email" required="true" label="Email Address" size="50">
+                        <p:ajax event="blur" update="emailMessage errors"/>
+                    </p:inputText>
+                    <p:message id="emailMessage" for="email" display="icon"/>
+                    
+                    <p:outputLabel value="Secondary Address " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:inputText  id="semail" required="true" label="Secondary Email Address" size="50">
+                        <p:ajax event="blur" update="semailMessage errors"/>
+                    </p:inputText>
+                    <p:message id="semailMessage" for="semail" display="icon"/>
+                    
+                    <p:outputLabel value="Phone Number " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:inputMask  id="phone" required="true" label="Phone Number" size="50" mask="(999) 999-9999">
+                        <p:ajax event="blur" update="phoneMessage errors"/>
+                    </p:inputMask>
+                    <p:message id="phoneMessage" for="phone" display="icon"/>
+                    
+                    <p:outputLabel value="Fax Number " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:inputMask  id="fax" required="true" label="Fax Number" size="50" mask="(999) 999-9999">
+                        <p:ajax event="blur" update="faxMessage errors"/>
+                    </p:inputMask>
+                    <p:message id="faxMessage" for="fax" display="icon"/>
+                    
+                    <p:outputLabel value="Mobile Number " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:inputMask  id="mobile" required="true" label="Mobile Number" size="50" mask="(999) 999-999-9-999">
+                        <p:ajax event="blur" update="mobileMessage errors"/>
+                    </p:inputMask>
+                    <p:message id="mobileMessage" for="mobile" display="icon"/>
+                </h:panelGrid>
+            </b:panel>
+        </ui:composition>
+
+    </body>
+</html>

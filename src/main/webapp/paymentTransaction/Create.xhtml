@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="PaymentTransactionCreateDlg" widgetVar="PaymentTransactionCreateDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.CreatePaymentTransactionTitle}">
+            <h:form id="PaymentTransactionCreateForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{paymentTransactionController.selected != null}">
+                        <p:outputLabel value="#{bundle.CreatePaymentTransactionLabel_id}" for="id" />
+                        <p:inputText id="id" value="#{paymentTransactionController.selected.id}" title="#{bundle.CreatePaymentTransactionTitle_id}" required="true" requiredMessage="#{bundle.CreatePaymentTransactionRequiredMessage_id}"/>
+                        <p:outputLabel value="#{bundle.CreatePaymentTransactionLabel_referenceNo}" for="referenceNo" />
+                        <p:inputText id="referenceNo" value="#{paymentTransactionController.selected.referenceNo}" title="#{bundle.CreatePaymentTransactionTitle_referenceNo}" />
+                        <p:outputLabel value="#{bundle.CreatePaymentTransactionLabel_confirmationNo}" for="confirmationNo" />
+                        <p:inputText id="confirmationNo" value="#{paymentTransactionController.selected.confirmationNo}" title="#{bundle.CreatePaymentTransactionTitle_confirmationNo}" />
+                        <p:outputLabel value="#{bundle.CreatePaymentTransactionLabel_taxDue}" for="taxDue" />
+                        <p:inputText id="taxDue" value="#{paymentTransactionController.selected.taxDue}" title="#{bundle.CreatePaymentTransactionTitle_taxDue}" />
+                        <p:outputLabel value="#{bundle.CreatePaymentTransactionLabel_amountPaid}" for="amountPaid" />
+                        <p:inputText id="amountPaid" value="#{paymentTransactionController.selected.amountPaid}" title="#{bundle.CreatePaymentTransactionTitle_amountPaid}" />
+                        <p:outputLabel value="#{bundle.CreatePaymentTransactionLabel_datePaid}" for="datePaid" />
+                        <p:calendar id="datePaid" pattern="MM/dd/yyyy" value="#{paymentTransactionController.selected.datePaid}" title="#{bundle.EditPaymentTransactionTitle_datePaid}"  showOn="button"/>
+                    </p:panelGrid>
+                    <p:commandButton actionListener="#{paymentTransactionController.create}" value="#{bundle.Save}" update="display,:PaymentTransactionListForm:datalist,:growl" oncomplete="handleSubmit(args,'PaymentTransactionCreateDialog');"/>
+                    <p:commandButton value="#{bundle.Cancel}" onclick="PaymentTransactionCreateDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

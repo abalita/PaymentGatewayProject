@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <body>
+        <ui:composition >                           
+            <b:panel title="Taxpayer Address" styleClass="enrollmentPanel" look="primary" collapsible="false">
+                
+                <h:panelGrid columns="4" columnClasses="label, space,value">                                    
+                    <p:outputLabel value="House/Builing No: " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:inputText id="houseNo" size="50" required="true" label="Building/House No" immediate="true">
+                        <p:ajax event="blur" update="houseNoMessage errors"/>
+                    </p:inputText>
+                    <p:message id="houseNoMessage" for="houseNo" display="icon"/>
+
+                    <p:outputLabel value="Street: " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:inputText  id="street" required="true" label="Street" size="50">
+                        <p:ajax event="blur" update="streetMessage errors"/>
+                    </p:inputText>
+                    <p:message id="streetMessage" for="street" display="icon"/>
+                    
+                    <p:outputLabel value="District/Barangay " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:inputText  id="district" required="true" label="District/Barangay " size="50">
+                        <p:ajax event="blur" update="districtMessage errors"/>
+                    </p:inputText>
+                    <p:message id="districtMessage" for="district" display="icon"/>
+                    
+                    <p:outputLabel value="City " />
+                    <p:spacer width="20px" height="40px"/>                    
+                    <b:selectOneMenu  id="city" required="true">
+                        <p:ajax event="blur" update="cityMessage errors"/>
+                        <f:selectItem itemLabel="" itemValue="#{null}" />
+                        <f:selectItem itemLabel="NCR - National Capital Region" itemValue="NCR" />
+                        <f:selectItem itemLabel="Makati" itemValue="Makati" />
+                        <f:selectItem itemLabel="Paranaque" itemValue="Paranaque" />
+                    </b:selectOneMenu>
+                    <p:message id="cityMessage" for="city" display="icon"/>
+                    
+                    <p:outputLabel value="Province " />
+                    <p:spacer width="20px" height="40px"/>                    
+                    <b:selectOneMenu  id="province" required="true">
+                        <p:ajax event="blur" update="provinceMessage errors"/>
+                        <f:selectItem itemLabel="Philippines" itemValue="Philippines" />
+                    </b:selectOneMenu>
+                    <p:message id="provinceMessage" for="province" display="icon"/>
+                    
+                    <p:outputLabel value="Zip Code " />
+                    <p:spacer width="20px" height="40px"/>
+                    <p:inputText  id="zipcode" required="true" label="Zip Code " size="50">
+                        <p:ajax event="blur" update="zipcodeMessage errors"/>
+                    </p:inputText>
+                    <p:message id="zipcodeMessage" for="zipcode" display="icon"/>
+                </h:panelGrid>
+            </b:panel>
+        </ui:composition>
+
+    </body>
+</html>

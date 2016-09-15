@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <body>
+
+        <ui:composition template="./../templates/defaultLayout.xhtml">
+
+            <ui:define name="content">
+
+                <h:form styleClass="enrollmentPanel">
+                    <p:growl id="errors" autoUpdate="true"/>
+                    <p:wizard >
+                        <p:tab id="taxpayer" >
+                            <f:facet name="title">
+                                <h:outputText value="Taxpayer" style="font-size: 12px"/>
+                                <p:spacer width="5px"/>
+                                <b:iconAwesome name="users"/>
+                            </f:facet>
+                            <p:spacer height="20px"/>
+                            <ui:include src="taxpayerData.xhtml"/>
+                        </p:tab>
+
+                        <p:tab id="address" >
+                            <f:facet name="title">
+                                <h:outputText value="Address" style="font-size: 12px"/>
+                                <p:spacer width="5px"/>
+                                <b:iconAwesome name="building"/>
+                            </f:facet>
+                            <p:spacer height="20px"/>
+                            <ui:include src="addressData.xhtml"/>
+                        </p:tab>
+
+                        <p:tab id="contact" title="Contact">
+                            <f:facet name="title">
+                                <h:outputText value="Contact" style="font-size: 12px"/>
+                                <p:spacer width="5px"/>
+                                <b:iconAwesome name="phone-square"/>
+                            </f:facet>
+                            <p:spacer height="20px"/>
+                            <ui:include src="contactData.xhtml"/>
+                        </p:tab>
+
+                        <p:tab id="login" >
+                            <f:facet name="title">
+                                <h:outputText value="Login" style="font-size: 12px"/>
+                                <p:spacer width="5px"/>
+                                <b:iconAwesome name="lock"/>
+                            </f:facet>
+                            <p:spacer height="20px"/>
+                            <ui:include src="loginData.xhtml"/>
+                        </p:tab>
+                        
+                        <p:tab id="confirm" >
+                            <f:facet name="title">
+                                <h:outputText value="Confirmation" style="font-size: 12px"/>
+                                <p:spacer width="5px"/>
+                                <b:iconAwesome name="check-square-o"/>
+                            </f:facet>
+                            <p:spacer height="20px"/>
+                            <ui:include src="confirmationData.xhtml"/>
+                            
+                        </p:tab>
+                        
+                        <p:tab id="summary" >
+                            <f:facet name="title">
+                                <h:outputText value="Summary" style="font-size: 12px"/>
+                                <p:spacer width="5px"/>
+                                <b:iconAwesome name="info-circle"/>
+                            </f:facet>
+                            <p:spacer height="20px"/>
+                             <ui:include src="summaryData.xhtml"/>
+                            
+                        </p:tab>
+                    </p:wizard>
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

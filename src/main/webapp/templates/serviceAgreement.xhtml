@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:body>
+        <ui:composition >
+            
+                <b:modal id="amodal" title="Terms of Service Agreement" styleClass="modalPseudoClass"
+                         transient="true" backdrop="false" close-on-escape="false" rendered="true"
+                         size="modal-lg">
+                    
+                    <b:well size="lg">
+                        <p:scrollPanel style="width:800px;height:250px" mode="native">
+                        <h4>1. ACCOUNT OWNER AND USER ENROLLMENT OBLIGATIONS:</h4>
+                        <p style="font-size: 12px">Prior to the use of eDST, taxpayers that are mandated to use and/or voluntarily opted to avail of the eDST System shall enroll in the said system, 
+                            in accordance with the provision of the applicable rules and regulations, circulars and orders.
+                            However, for judicial entities or persons, the enrollment shall be made by the authorized natural person(s) specified in the company's board resolution duly issued for this purpose.
+                            Once an account Owner is enrolled in the eDST system, he/she may authorize as many users as he/she deems necessary in the company's business operations without the need for a pre-approval from the BIR.</p>
+                        <p style="font-size: 12px">In consideration of your use of the Service, the enrollee agrees to provide true, accurate, current and complete information about yourself, as prompted in the Service Enrollment Form.</p>
+                        <p:spacer height="20px"/>
+                        <h4>2. ACCEPTANCE OF TERMS:</h4>
+                        <p style="font-size: 12px">The BIR website provides its service to you which maybe updated from time to time without prior notice.</p>
+                        <p style="font-size: 12px">The information that you state herein will be validate by the BIR. If you are found to have falsified any information, 
+                            after the conduct of post-audit, your enrollment will be made invalid and appropriate action will be filed against you. </p>  
+                        <p:spacer height="20px"/>
+                        <div align="center">
+                            <p style="font-size: 12px">I hereby agree to be governed by the terms and condition of the eDST System Terms of Service Agreement. 
+                                I also hereby acknowledge to have read and fully understood the said terms and conditions.</p>
+                        </div>
+                       </p:scrollPanel>
+                    </b:well>
+                         
+                    <div align="center">                        
+                        <p style="font-size: 11px">If you have understand the terms of service agreement specified above, click "I Agree" to proceed ot eDST Enrollment, 
+                            otherwise click "I Disagree" to go back to eDST Welcome Page.</p>
+                    </div>
+                    <f:facet name="footer">  
+                        <h:form>
+                        <b:commandButton value="I Agree" size="xs" look="primary" action="/enrollment/main.xhtml"/>
+                        
+                        <b:button value="I Disagree" size="xs" dismiss="modal" onclick="return false;"/>
+                        </h:form>
+                    </f:facet>
+                </b:modal>
+           
+        </ui:composition>
+
+    </h:body>
+</html>
+

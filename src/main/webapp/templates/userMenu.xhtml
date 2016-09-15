@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head></h:head>
+    <h:body>
+        <ui:composition> 
+            <b:accordion>
+                <b:panel id="panel1" look="warning">
+                    <f:facet name="heading">
+                        <h:outputText value="Tax Forms"/>
+                    </f:facet>
+                    <b:listLinks>
+                        <b:navLink  value="Upload Forms" iconAwesome="fa-file-code-o" />
+                        <b:navLink  value="View Tax Forms" iconAwesome="list" /> 
+                    </b:listLinks>
+                </b:panel>
+                <b:panel id="panel2" look="warning">
+                    <f:facet name="heading">
+                        <h:outputText value="Payments"/>
+                    </f:facet>
+                    <b:listLinks>
+                        <b:navLink  value="Pay Tax Dues" iconAwesome="money" />
+                        <b:navLink  value="View Payments" iconAwesome="list" /> 
+                    </b:listLinks>
+                </b:panel>
+                <b:panel id="panel3" look="warning">
+                    <f:facet name="heading">
+                        <h:outputText value="My Account"/>
+                    </f:facet>
+                    <b:listLinks>
+                        <b:navLink  value="Profile" iconAwesome="user" />
+                        <b:navLink  value="Change Password" iconAwesome="lock" /> 
+                        <b:navLink  value="Logout" iconAwesome="sign-out" />
+                    </b:listLinks>
+                </b:panel>
+
+            </b:accordion>          
+        </ui:composition>
+    </h:body>    
+</html>
+
