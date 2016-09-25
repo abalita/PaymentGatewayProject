@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ccci.ebirforms</groupId>
-    <artifactId>eBIRFormPaymentGateway</artifactId>
+    <artifactId>TaxPaymentGateway</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>eBIRFormPaymentGateway</name>
+    <name>TaxPaymentGateway</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
