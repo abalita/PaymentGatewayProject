@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <body>
+        <ui:composition template="./../templates/main.xhtml">
+
+            <ui:define name="content">
+                <p:scrollPanel style="height:550px; border: 0px">
+                    <h:form style=" border: 0px" enctype="multipart/form-data"> 
+                        
+                        <b:well style="height: 100%; width: 100%;">
+                            <h4 style="color: #FE9B09">Tax Form Upload</h4>
+                            <h6 style="color: #1C0C59">Select your eBIR Form.</h6>                       
+                            <p:fileUpload fileUploadListener="#{fileUpload.handleFileUpload}" mode="advanced"
+                                          update="messages"  sizeLimit="100000" allowTypes="/(\.|\/)(xml)$/" 
+                                          />
+                            <p:growl id="messages" showDetail="true" />
+                            <p:commandButton value="View Form" action="#{fileUpload.viewForm()}">
+                                <f:setPropertyActionListener target="#{form1702RT.form1702RTBean}" value="#{fileUpload.form1702RTBean}"/>
+                            </p:commandButton>
+                           <p:commandButton value="Proceed" action="#{fileUpload.proceed()}">
+                                
+                            </p:commandButton>
+                              
+                        </b:well>                                                    
+                    </h:form>
+                   
+                </p:scrollPanel>
+            </ui:define>
+
+        </ui:composition>       
+
+    </body>
+</html>

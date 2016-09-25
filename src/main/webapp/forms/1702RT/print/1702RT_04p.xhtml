@@ -1,0 +1,659 @@
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:b="http://bootsfaces.net/ui">
+    <table id="table1"  width="766" cellpadding="2"  style="font-size: 12px; font-family: Arial, Helvetica, sans-serif" bgcolor="#CCCCCC">
+
+        <tr>
+            <td bgcolor="White">
+                <table class="table1702RTWhite" style="border-bottom: none"
+                       cellspacing="0" cellpadding="0" width="766">
+                    <tr>
+                        <td align="center" valign="middle"
+                            style="width: 335px; border-bottom: none"><font size="5">
+                                <b>Annual Income Tax Return</b> </font><br /> <font size="3"> 
+                                <b>Page 4 - Schedules 3 &amp; 4</b></font>
+                        </td>
+                        <td align="center" valign="middle"
+                            style="width: 130px; border-bottom: none">BIR Form No.<br />
+                            <b style="font-size: 1.8em;">1702-RT</b><br />
+                            June 2013</td>
+                        <td align="right" valign="bottom"
+                            style="width: 311px; border-bottom: none; vertical-align: top; padding-top: 10px">
+                            <div style="text-align: right; height: 42px">
+                                <img src="/efps-war/page?pageId=1702-RT06/13P4" 
+                                     style="height:35px;width:300px;" /><br /> <span
+                                     style="margin-right: 6px;">1702-RT06/13P4</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table1702RTWhite" style="border-top: 1px solid black;"
+                       width="100%">
+                    <tr>
+                        <td width="39%" style="border-top: none; padding-left: 5px;"
+                            align="left"><b>Taxpayer Identification Number (TIN)</b>
+                        </td>
+                        <td width="71%" style="border-top: none; padding-left: 5px;"
+                            align="left"><b>Registered Name</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="39%" style="border: 1px solid black;" align="left">
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinA}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                          style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinB}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinC}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; float: left;" value="#{form1702RT.form1702RTBean.branchCode}" 
+                                            disabled="true"/>
+                        </td>
+                        <td width="71%" style="border: 1px solid black;" align="left">
+                            <p:inputText  styleClass="readOnlyStyle" style="width: 98%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.registeredName}" 
+                                            disabled="true"/>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                <table bgcolor="#CCCCCC" cellspacing="0" width="766"
+                       style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+
+                    <tr>
+                        <td colspan="4">
+                            <table cellspacing="0" cellpadding="0" width="766"
+                                   style="border: 1px solid #333333; font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+                                <tr>
+                                    <td colspan="4">
+                                        <table class="table1702RT" width="100%" cellspacing="0" cellpadding="0"
+                                               style="border: 1px solid #333333" bgcolor="#CCCCCC">
+                                            <tr>
+                                                <td align="center">
+                                                    <b style="font-size: 13px">Schedule 3 - Other Taxable Income
+                                                        Not Subjected to Final Tax </b><i>(Attach additional sheet/s,
+                                                        if necessary)</i>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#CCCCCC"
+                            style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+                            colspan="4">
+                            <table width="100%" cellspacing="0" 
+                                   style="border: 1px solid #333333" bgcolor="#CCCCCC">
+
+
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>1 </b>&#160;<p:inputText style="width: 95%; "
+                                                                      value="#{form1702RT.form1702RTBean.otherTaxIncomeDescription1}" 
+                                                                      maxlength="50"
+                                                                      styleClass="alphaNumOnly"
+                                                                      disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50" 
+                                                       style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.otherTaxIncomeAmount1}"
+
+                                                       styleClass="sched3a numberStyle"
+                                                       disabled="true"></p:inputText></td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>2 </b>&#160;<p:inputText style="width: 95%; "
+                                                                      value="#{form1702RT.form1702RTBean.otherTaxIncomeDescription2}" 
+                                                                      maxlength="50"
+                                                                      styleClass="alphaNumOnly"
+                                                                      disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50" 
+                                                       style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.otherTaxIncomeAmount2}"
+
+                                                       styleClass="sched3a numberStyle"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>3 </b>&#160;<p:inputText style="width: 95%;" id="txtOtherTaxIncomeDescription3" 
+                                                                      value="#{form1702RT.form1702RTBean.otherTaxIncomeDescription3}"
+                                                                      maxlength="50"
+                                                                      styleClass="sched3Desc #{form1702RT.form1702RTBean.otherTaxIncomeDescription3Class} alphaNumOnly" 
+                                                                      disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  
+                                                       style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.otherTaxIncomeAmount3}"
+
+                                                       styleClass="sched3a sched3b sched3Total numberStyle #{form1702RT.form1702RTBean.otherTaxIncomeAmount3Class}"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>4 Total Other Taxable Income Not Subjected to Final Tax </b><i>(Sum of Items 1 to 3)</i>
+                                        <i>(To Part IV Item 33)</i>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50" 
+                                                       style="width: 98%; " styleClass="readOnlyStyle sched3a numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.totalOtherTaxableIncomeNotSubjectedToFinalTax}"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                            </table></td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+
+                <table bgcolor="#CCCCCC" cellspacing="0" width="766"
+                       style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+
+                    <tr>
+                        <td colspan="4">
+                            <table cellspacing="0" cellpadding="0" width="766"
+                                   style="border: 1px solid #333333; font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+                                <tr>
+                                    <td colspan="4">
+                                        <table class="table1702RT" width="100%" cellspacing="0" cellpadding="0"
+                                               style="border: 1px solid #333333" bgcolor="#CCCCCC">
+                                            <tr>
+                                                <td align="center">
+                                                    <b style="font-size: 13px">Schedule 4 - Ordinary Allowable
+                                                        Itemized Deductions </b><i>(Attach additional sheet/s, if
+                                                        necessary)</i>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#CCCCCC"
+                            style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+                            colspan="4">
+                            <table style="width: 100%; border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px" cellspacing="0">
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>1 </b>Advertising and Promotions
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.advertisingAndPromotions}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr style="border-right-color: #000000; border-right-width: 1px; border-right-style: solid">
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: none; border-top-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-right-style: none; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        &#160;&#160;&#160;Amortizations <i>(Specify on Items 2, 3
+                                            &amp; 4)</i>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>2 </b>&#160;<p:inputText style="width: 95%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} alphaNumOnly"
+                                                                      value="#{form1702RT.form1702RTBean.amortizationsDescription1}" 
+                                                                      maxlength="50"
+                                                                      disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.amortizationsAmount1}"
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>3 </b>&#160;<p:inputText style="width: 95%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} alphaNumOnly"
+                                                                      value="#{form1702RT.form1702RTBean.amortizationsDescription2}" 
+                                                                      maxlength="50"
+                                                                      disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.amortizationsAmount2}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>4 </b>&#160;<p:inputText style="width: 95%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} #{form1702RT.form1702RTBean.amortizationsDescription3Class} alphaNumOnly sched4aDesc"
+                                                                      value="#{form1702RT.form1702RTBean.amortizationsDescription3}"
+                                                                      maxlength="50"
+                                                                      disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} #{form1702RT.form1702RTBean.amortizationsAmount3Class} sched4a numberStyle sched4aTotal"
+                                                       value="#{form1702RT.form1702RTBean.amortizationsAmount3}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>5 </b>Bad Debts
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.badDebts}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>6 </b>Charitable Contributions
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.charitableContributions}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>7 </b>Commissions
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.commissions}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>8 </b>Communication, Light and Water
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.communicationLightAndWater}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>9 </b>Depletion
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.depletion}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>10 </b>Depreciation
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.depreciation}" 
+
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>11 </b>Director's Fees
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.directorsFees}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>12 </b>Fringe Benefits
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.fringeBenefits}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>13 </b>Fuel and Oil
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.fuelAndOil}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>14 </b>Insurance
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.insurance}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>15 </b>Interest
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.interestSchedule4}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>16 </b>Janitorial and Messengerial Services
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.janitorialAndMessengerialServices}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>17 </b>Losses
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.losses}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>18 </b>Management and Consultancy Fee
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.managementAndConsultancyFee}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>19 </b>Miscellaneous
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.miscellaneous}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>20 </b>Office Supplies
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.officeSupplies}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>21 </b>Other Services
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.otherServices}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>22 </b>Professional Fees
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.professionalFees}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>23 </b>Rental
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.rental}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>24 </b>Repairs and Maintenance - (Labor or Labor &amp;
+                                        Materials)
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.repairsAndMaintenanceLaborOrLaborAndMaterials}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>25 </b>Repairs and Maintenance - (Materials/Supplies)
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.repairsAndMaintenanceMaterialSupplies}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>26 </b>Representation and Entertainment
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.representationAndEntertainment}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>27 </b>Research and Development
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.researchAndDevelopment}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>28 </b>Royalties
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.royalties}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>29 </b>Salaries and Allowances
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.salariesAndAllowances}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</ui:composition>

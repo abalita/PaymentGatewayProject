@@ -1,0 +1,50 @@
+<ui:composition
+xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:ui="http://java.sun.com/jsf/facelets"
+xmlns:ice="http://www.icesoft.com/icefaces/component">
+<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td><ice:graphicImage
+				rendered="#{form1702RT2013.form1702RTBean.inquiryPage}"
+				visible="#{form1702RT2013.form1702RTBean.inquiryPage}"
+				url="#{form1702RT2013.authCode}" style="border:1.5px; width: 100px" /></td>
+		<td align="right">
+				<h:panelGroup>
+				<table
+					rendered="#{form1702RT2013.form1702RTBean.inquiryPage}"
+					visible="#{form1702RT2013.form1702RTBean.inquiryPage}">
+					<tr>
+						<td align="right">
+							<font face="Arial, Helvetica, sans-serif" size="2" color="#CC0000">
+								Reference No :
+							</font>
+							<font face="Arial, Helvetica, sans-serif" size="2" color="#330099">
+								<ice:outputText value="#{form1702RT2013.form1702RTBean.referenceNo}" />
+							</font>
+							<br></br>
+							<font face="Arial, Helvetica, sans-serif" size="2" color="#CC0000">
+								Date Filed :
+							</font>
+							<font face="Arial, Helvetica, sans-serif" size="2" color="#330099">
+								<ice:outputText value="#{form1702RT2013.form1702RTBean.dateFiled}">
+									<f:convertDateTime pattern="MMMM dd, yyyy hh:mm aa"/>
+								</ice:outputText>
+							</font>
+							<br></br>
+							<font face="Arial, Helvetica, sans-serif" size="2" color="#CC0000">
+								Batch Number :
+							</font>
+							<font face="Arial, Helvetica, sans-serif" size="2" color="#330099">
+								<ice:outputText value="#{form1702RT2013.form1702RTBean.batchNo}" />
+							</font>
+						</td>
+					</tr>
+				</table>
+				</h:panelGroup>
+			</td>
+	</tr>
+
+</table>
+</ui:composition>

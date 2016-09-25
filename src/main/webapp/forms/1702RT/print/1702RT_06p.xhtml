@@ -1,0 +1,624 @@
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:b="http://bootsfaces.net/ui">
+    <table width="766" bgcolor="#CCCCCC">
+        <tr>
+            <td bgcolor="White">
+                <table class="table1702RTWhite" style="border-bottom: none"
+                       cellspacing="0" cellpadding="0" >
+                    <tr>
+                        <td align="center" valign="middle"
+                            style="width: 335px; border-bottom: none"><font size="5">
+                                <b>Annual Income Tax Return</b> </font><br /> <font size="3"> <b>Page
+                                    6 - Schedules 7, 8 &amp; 9</b> </font>
+                        </td>
+                        <td align="center" valign="middle"
+                            style="width: 130px; border-bottom: none">BIR Form No.<br />
+                            <b style="font-size: 1.8em;">1702-RT</b><br />
+                            June 2013</td>
+                        <td align="right" valign="bottom"
+                            style="width: 311px; border-bottom: none; vertical-align: top; padding-top: 10px">
+                            <div style="text-align: right; height: 42px">
+                                <img src="/efps-war/page?pageId=1702-RT06/13P6" 
+                                     style="height:35px;width:300px;" /><br /> <span
+                                     style="margin-right: 6px;">1702-RT06/13P6</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table1702RTWhite" style="border-top: 1px solid black;"
+                       width="100%">
+                    <tr>
+                        <td width="39%" style="border-top: none; padding-left: 5px;"
+                            align="left"><b>Taxpayer Identification Number (TIN)</b>
+                        </td>
+                        <td width="71%" style="border-top: none; padding-left: 5px;"
+                            align="left"><b>Registered Name</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="39%" style="border: 1px solid black;" align="left">
+                            <p:inputText  styleClass="readOnlyStyle"
+                                          style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinA}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinB}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinC}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; float: left;" value="#{form1702RT.form1702RTBean.branchCode}" 
+                                            disabled="true"/>
+                        </td>
+                        <td width="71%" style="border: 1px solid black;" align="left">
+                            <p:inputText  styleClass="readOnlyStyle" style="width: 98%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.registeredName}" 
+                                            disabled="true"/>
+                        </td>
+                    </tr>
+                </table></td>
+        </tr>
+        <tr>
+            <td>
+                <table class="table1702RT" width="766" cellspacing="0"
+                       cellpadding="0">
+                    <tr>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    Schedule 7 - Tax Credits/Payments (attach proof) </b> </font> <font size="1">
+                                <span style="font-size: 9px; font-style: italic;">(Attach
+                                    additional sheet/s, if necessary)</span> </font></td>
+                    </tr>
+                </table></td>
+        </tr>
+        <tr>
+            <td>
+                <table class="table1702RT" width="766" cellspacing="0"
+                       cellpadding="0">
+                    <tr>
+                        <td colspan="2" align="left" valign="middle" style="width:70%;"><span
+                                style="font-weight: bold; padding-left: 5px;">1</span> Prior
+                            Year's Excess Credits Other Than MCIT</td>
+                        <td align="center" valign="middle" style="width:30%;"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.priorYearsExcessCreditsOtherThanMCIT}"
+                                                    style="width: 98%;"
+
+                                                    styleClass="sched7a numberStyle"
+                                                    disabled="true">
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  align="left" valign="middle" style="width:70%"><span
+                                style="font-weight: bold; padding-left: 5px;">2</span> Income Tax
+                            Payment under MCIT from Previous Quarter/s</td>
+                        <td align="center" valign="middle" style="width:30%;"><p:inputText  value="#{form1702RT.form1702RTBean.incomeTaxPaymentUnderMCIT}"
+                                                                                              size="20"   style="width: 98%;"
+
+                                                                                              styleClass="sched7a numberStyle"
+                                                                                              disabled="true">
+                            </p:inputText></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  align="left" valign="middle" style="width:70%;"><span
+                                style="font-weight: bold; padding-left: 5px;">3</span> Income Tax
+                            Payment under Regular/Normal Rate from Previous Quarter/s</td>
+                        <td align="center" valign="middle" style="width:30%;"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.incomeTaxPaymentUnderRegularRate}"
+                                                    style="width: 98%;"
+
+                                                    styleClass="sched7a numberStyle"
+                                                    disabled="true">
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  align="left" valign="middle" style="width:70%;"><span
+                                style="font-weight: bold; padding-left: 5px;">4</span> Excess
+                            MCIT Applied this Current Taxable Year
+                            <i>(From Schedule 8 Item 4F)</i>
+                        </td>
+                        <td align="center" valign="middle" style="width:30%;"><font size="2"> <b>
+                                    <p:inputText  size="20" styleClass="readOnlyStyle sched7a sched8a numberStyle" style="width: 98%" value="#{form1702RT.form1702RTBean.excessMCIT}"
+
+                                                    disabled="true">
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  align="left" valign="middle" style="width:70%;"><span
+                                style="font-weight: bold; padding-left: 5px;">5</span> Creditable
+                            Tax Withheld from Previous Quarter/s per BIR Form No. 2307</td>
+                        <td align="center" valign="middle" style="width:30%;"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.creditableTaxWithheldFromPrevQuarters}"
+                                                    style="width: 98%;"
+
+                                                    styleClass="sched7a numberStyle"
+                                                    disabled="true">
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  align="left" valign="middle" style="width:70%;"><span
+                                style="font-weight: bold; padding-left: 5px;">6</span> Creditable
+                            Tax Withheld per BIR Form No. 2307 for the 4th Quarter</td>
+                        <td align="center" valign="middle" style="width:30%;"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.creditableTaxWithheldFromTheFourthQuarter}"
+                                                    style="width: 98%;"
+
+                                                    styleClass="sched7a numberStyle"
+                                                    disabled="true">
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  align="left" valign="middle" style="width:70%;"><span
+                                style="font-weight: bold; padding-left: 5px;">7</span> Foreign
+                            Tax Credits, if applicable</td>
+                        <td align="center" valign="middle" style="width:30%;"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.foreignTaxCredits}"
+                                                    style="width: 98%;"
+
+                                                    styleClass="sched7a numberStyle"
+                                                    disabled="true">
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  align="left" valign="middle" style="width:70%;"><span
+                                style="font-weight: bold; padding-left: 5px;">8</span> Tax Paid
+                            in Return Previously Filed, if this is an Amended Return</td>
+                        <td align="center" valign="middle" style="width:30%;"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.taxPaidInReturn}"
+                                                    style="width: 98%;"
+
+                                                    styleClass="#{form1702RT.form1702RTBean.taxPaidInReturnClass} sched7a numberStyle"
+                                                    disabled="true">
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  align="left" valign="middle" style="width:70%;"><span
+                                style="font-weight: bold; padding-left: 5px;">9</span> Special Tax Credits 
+                            <span style="font-style: italic;">(To Part V Item 53)</span>
+                        </td>
+                        <td align="center" valign="middle" style="width:30%;"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.sched7SpecialTaxCredits}"
+                                                    style="width: 98%;"
+
+                                                    styleClass="sched7a numberStyle"
+                                                    disabled="true">
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><span style="padding-left: 20px;">Other
+                                Credits/Payments</span> <span
+                                style="font-size: 9px; font-style: italic;">(Specify)</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  align="left" valign="middle" style="width:70%;"><span
+                                style="font-weight: bold; padding-left: 5px;">10</span> <p:inputText value="#{form1702RT.form1702RTBean.otherCreditsPaymentsDescription1}"
+                                maxlength="50" 
+                                size="20" style="width:95%;" styleClass="alphaNumOnly"
+                                disabled="true">
+
+                            </p:inputText></td>
+                        <td align="center" valign="middle" style="width:30%;"><p:inputText 
+                                size="20"   style="width: 98%;" value="#{form1702RT.form1702RTBean.otherCreditsPaymentsAmount1}"
+
+                                styleClass="sched7a numberStyle"
+                                disabled="true">
+                            </p:inputText></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="left" valign="middle" style="width:70%;"><span
+                                style="font-weight: bold; padding-left: 5px;">11</span> <p:inputText value="#{form1702RT.form1702RTBean.otherCreditsPaymentsDescription2}"
+                                maxlength="50" 
+                                styleClass="#{form1702RT.form1702RTBean.otherCreditsPaymentsDescription2Class} alphaNumOnly sched7Desc" size="20" style="width:95%;"
+                                disabled="true">
+                            </p:inputText></td>
+                        <td align="center" valign="middle" style="width:30%;"><font size="2"> <b>
+                                    <p:inputText  size="20"   value="#{form1702RT.form1702RTBean.otherCreditsPaymentsAmount2}"
+                                                    style="width: 98%;"
+
+                                                    styleClass="#{form1702RT.form1702RTBean.otherCreditsPaymentsAmount2Class} sched7a sched7b numberStyle sched7Total"
+                                                    disabled="true">
+
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  align="left" valign="middle" style="width: 480px"><span
+                                style="padding-left: 5px; font-weight: bold;">12 Total Tax Credits/Payments</span>
+                            <span style="font-size: 9px; font-style: italic;">(Sum of Items 1 to 11)</span>
+                            <span style="font-size: 9px; font-style: italic;">(To Part IV Item 45)</span>
+                        </td>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    <p:inputText styleClass="readOnlyStyle sched7a numberStyle" style="width: 98%" value="#{form1702RT.form1702RTBean.totalTaxCredits}"
+                                                   size="20" 
+                                                   disabled="true">
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                </table></td>
+        </tr>
+        <tr>
+            <td>
+                <table class="table1702RT" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="center" valign="middle" colspan="5"><span
+                                style="font-size: 13px; font-weight: bold;">Schedule 8 -
+                                Computation of Minimum Corporate Income Tax (MCIT)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 3%"></td>
+                        <td align="center" style="width: 12%">Year</td>
+                        <td align="center" style="width: 29%">A) Normal Income Tax as
+                            Adjusted</td>
+                        <td align="center" style="width: 24%">B) MCIT</td>
+                        <td align="center" style="width: 33%">C) Excess MCIT over
+                            Normal Income Tax</td>
+                    </tr>
+                    <tr>
+                        <td align="center"><span style="font-weight: bold;">1</span>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.mcitYear1}"
+                                                           maxlength="4"  style="width: 98%;" onkeydown="return NumOnly_keydown(event);"
+                                                           disabled="true"
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style}"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.normalIncomeTax1}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8b numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.mcit1}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8b numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20"  value="#{form1702RT.form1702RTBean.excessMCITOverNormalTax1}"
+                                                           style="width: 98%;" 
+                                                           styleClass="readOnlyStyle sched8b numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"><span style="font-weight: bold;">2</span>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.mcitYear2}"
+                                                           maxlength="4"  style="width: 98%;" onkeydown="return NumOnly_keydown(event);"
+                                                           disabled="true"
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style}"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.normalIncomeTax2}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8c numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.mcit2}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8c numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.excessMCITOverNormalTax2}"
+                                                           style="width: 98%;" 
+                                                           styleClass="readOnlyStyle sched8c numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"><span style="font-weight: bold;">3</span>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.mcitYear3}"
+                                                           maxlength="4"  style="width: 98%;" onkeydown="return NumOnly_keydown(event);"
+                                                           disabled="true"
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style}"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.normalIncomeTax3}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8d numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.mcit3}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8d numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.excessMCITOverNormalTax3}"
+                                                           style="width: 98%;" 
+                                                           styleClass="readOnlyStyle sched8d numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                    </tr>
+                </table></td>
+        </tr>
+        <tr>
+            <td>
+                <table class="table1702RT" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="left" valign="middle" colspan="5"><span
+                                style="font-size: 13px; padding-left: 7px;">Continuation
+                                of Schedule 8 </span> <span
+                                style="font-size: 13px; font-style: italic;">(Line numbers
+                                continue from table above)</span></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 3%"></td>
+                        <td align="center" style="width: 26%"><div
+                                style="width: 190px;">D) Excess MCIT Applied/Used for
+                                Previous Years</div>
+                        </td>
+                        <td align="center" style="width: 22%">E) Expired Portion of
+                            Excess MCIT</td>
+                        <td align="center" style="width: 22%"><span
+                                style="font-weight: bold;">F) Excess MCIT Applied this
+                                Current Taxable Year</span>
+                        </td>
+                        <td align="center" style="width: 27%"><span
+                                style="font-size: 11px">G) Balance of Excess MCIT
+                                Allowable as Tax Credit for Succeeding Year/s</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"><span style="font-weight: bold;">1</span>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.excessMCITAppliedPreviously1}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8b numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.expiredPortionOfExcessMCIT1}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8b numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20"  value="#{form1702RT.form1702RTBean.excessMCITAppliedCurrently1}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8a sched8b numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText styleClass="readOnlyStyle sched8b numberStyle" style="width: 98%"  value="#{form1702RT.form1702RTBean.balanceOfExcessMCIT1}"
+                                                          size="20" 
+
+                                                          disabled="true"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"><span style="font-weight: bold;">2</span>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.excessMCITAppliedPreviously2}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8c numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20"  value="#{form1702RT.form1702RTBean.expiredPortionOfExcessMCIT2}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8c numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20"  value="#{form1702RT.form1702RTBean.excessMCITAppliedCurrently2}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8a sched8c numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText style="width: 98%"  value="#{form1702RT.form1702RTBean.balanceOfExcessMCIT2}"
+                                                          size="20"  styleClass="readOnlyStyle sched8c numberStyle"
+
+                                                          disabled="true"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"><span style="font-weight: bold;">3</span>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.excessMCITAppliedPreviously3}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8d numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20"  value="#{form1702RT.form1702RTBean.expiredPortionOfExcessMCIT3}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8d numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText  size="20"  value="#{form1702RT.form1702RTBean.excessMCITAppliedCurrently3}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.schedule8Style} sched8a sched8d numberStyle"
+                                                           disabled="true"/>
+                        </td>
+                        <td align="center"><p:inputText style="width: 98%"  value="#{form1702RT.form1702RTBean.balanceOfExcessMCIT3}"
+                                                          size="20"  styleClass="readOnlyStyle sched8d numberStyle"
+
+                                                          disabled="true"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="border-right: none;"><span
+                                style="font-weight: bold">4</span>
+                        </td>
+                        <td colspan="2" style="border-left: none;"><span
+                                style="font-weight: bold;">Total Excess MCIT</span><span
+                                style="font-size: 9px; font-style: italic;">(Sum of Column
+                                for Items 1F to 3F)</span>
+                            <span style="font-size: 9px; font-style: italic;">(To Schedule 7 Item 4)</span>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.totalExcessCreditsMCIT}"
+                                                           styleClass="readOnlyStyle sched8a numberStyle" style="width: 98%;"
+                                                           disabled="true"/>
+                            <p:inputText value="#{form1702RT.form1702RTBean.incomeTaxDueOtherThanMCIT}" style="display: none" styleClass="sched8a"/>
+                            <p:inputText value="#{form1702RT.form1702RTBean.minimumCorporateIncomeTax}" style="display: none" styleClass="sched8a"/>
+                        </td>
+                        <td align="center" bgcolor="#CCCCCC"></td>
+                    </tr>
+                </table></td>
+        </tr>
+        <tr>
+            <td>
+                <table class="table1702RT" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="center" valign="middle" colspan="5"><span
+                                style="font-size: 13px; font-weight: bold;">Schedule 9 -
+                                Reconciliation of Net Income per Books Against Taxable Income</span> <span
+                                style="font-size: 9px; font-style: italic;">(Attach
+                                additional sheet/s, if necessary)</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"
+                            style="border-right: none; width: 3%; border-right: none;"><span
+                                style="font-weight: bold">1</span>
+                        </td>
+                        <td style="width: 67%; border-left: none;">Net Income/(Loss)
+                            per books</td>
+                        <td align="center" style="width: 30%;"><p:inputText value="#{form1702RT.form1702RTBean.netIncomeLossPerBooks}"
+                                                                              size="20"   style="width: 98%;"
+
+                                                                              styleClass="sched9a numberStyle negativeNumber"
+                                                                              disabled="true"></p:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><span style="padding-left: 20px;">Add:
+                                Non-deductible Expenses/Taxable Other Income</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"><span style="font-weight: bold">2</span>
+                        </td>
+                        <td><p:inputText  size="20" value="#{form1702RT.form1702RTBean.nonDeductibleExpenses}"
+                                            maxlength="50"
+                                            style="width: 98%;" styleClass="alphaNumOnly"
+                                            disabled="true"></p:inputText>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.nonDeductibleExpensesAmount}"
+                                                           style="width: 98%;"
+
+                                                           styleClass="sched9a numberStyle"
+                                                           disabled="true"></p:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="border-right: none;"><span
+                                style="font-weight: bold">3</span></td>
+                        <td><p:inputText  size="20" value="#{form1702RT.form1702RTBean.nonDeductibleExpenses2}" 
+                                            maxlength="50"
+                                            style="width: 98%;" styleClass="#{form1702RT.form1702RTBean.nonDeductibleExpensesClass} alphaNumOnly sched9NDDesc"
+                                            disabled="true"></p:inputText></td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.nonDeductibleExpensesAmount2}"
+                                                           style="width: 98%;"
+
+                                                           styleClass="#{form1702RT.form1702RTBean.nonDeductibleExpensesAmountClass} sched9a sched9b numberStyle sched9NDTotal"
+                                                           disabled="true"></p:inputText></td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="border-right: none;"><span
+                                style="font-weight: bold">4</span>
+                        </td>
+                        <td style="border-left: none;"><span
+                                style="font-weight: bold;">Total </span><span
+                                style="font-size: 9px; font-style: italic;">(Sum of Items
+                                1 to 3)</span>
+                        </td>
+                        <td align="center"><p:inputText styleClass="readOnlyStyle sched9a numberStyle" value="#{form1702RT.form1702RTBean.totalNonDeductibleExpenses}"
+                                                          size="20"  style="width: 98%;"
+                                                          disabled="true"></p:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><span style="padding-left: 20px;">Less:
+                                A) Non-taxable Income and Income Subjected to Final Tax</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"><span style="font-weight: bold">5</span>
+                        </td>
+                        <td><p:inputText  size="20" value="#{form1702RT.form1702RTBean.nonTaxable}"
+                                            maxlength="50"
+                                            style="width: 98%;"
+                                            styleClass="alphaNumOnly"
+                                            disabled="true"></p:inputText>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.nonTaxableAmount}"
+                                                           style="width: 98%;"
+
+                                                           styleClass="sched9a numberStyle"
+                                                           disabled="true"></p:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="border-right: none;"><span
+                                style="font-weight: bold">6</span></td>
+                        <td><p:inputText  size="20" value="#{form1702RT.form1702RTBean.nonTaxable2}"
+                                            maxlength="50"
+                                            style="width: 98%;" styleClass="#{form1702RT.form1702RTBean.nonTaxable2Class} alphaNumOnly sched9NTDesc"
+                                            disabled="true"></p:inputText></td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.nonTaxableAmount2}"
+                                                           style="width: 98%;"
+
+                                                           styleClass="#{form1702RT.form1702RTBean.nonTaxableAmount2Class} sched9a sched9c numberStyle sched9NTTotal"
+                                                           disabled="true"></p:inputText></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><span style="padding-left: 55px;">B)
+                                Special Deductions</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"><span style="font-weight: bold">7</span>
+                        </td>
+                        <td><p:inputText  size="20" value="#{form1702RT.form1702RTBean.specialDeductions}"
+                                            maxlength="50"
+                                            style="width: 98%;"
+                                            styleClass="alphaNumOnly"
+                                            disabled="true"></p:inputText>
+                        </td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.specialDeductionsAmount}"
+                                                           style="width: 98%;" 
+                                                           styleClass="sched9a numberStyle"
+                                                           disabled="true"></p:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="border-right: none;"><span
+                                style="font-weight: bold">8</span></td>
+                        <td><p:inputText  size="20" value="#{form1702RT.form1702RTBean.specialDeductions2}"
+                                            maxlength="50"
+                                            style="width: 98%;" styleClass="#{form1702RT.form1702RTBean.specialDeductions2Class} alphaNumOnly sched9SDDesc"
+                                            disabled="true"></p:inputText></td>
+                        <td align="center"><p:inputText  size="20" value="#{form1702RT.form1702RTBean.specialDeductionsAmount2}"
+                                                           style="width: 98%;" 
+                                                           styleClass="#{form1702RT.form1702RTBean.specialDeductionsAmount2Class} sched9a sched9d numberStyle sched9SDTotal"
+                                                           disabled="true"></p:inputText></td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="border-right: none;"><span
+                                style="font-weight: bold">9</span>
+                        </td>
+                        <td style="border-left: none;"><span
+                                style="font-weight: bold;">Total </span><span
+                                style="font-size: 9px; font-style: italic;">(Sum of Items
+                                5 to 8)</span>
+                        </td>
+                        <td align="center"><p:inputText styleClass="readOnlyStyle sched9a numberStyle"  value="#{form1702RT.form1702RTBean.totalNonTaxableAndFinalTaxIncomeWithSpecialDeductions}"
+                                                          size="20"  style="width: 98%"
+                                                          disabled="true"></p:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="border-right: none;"><span
+                                style="font-weight: bold">10</span>
+                        </td>
+                        <td style="border-left: none;"><span
+                                style="font-weight: bold;">Net Taxable Income (Loss) </span><span
+                                style="font-size: 9px; font-style: italic;">(Item 4 Less
+                                Item 9)</span>
+                        </td>
+                        <td align="center"><p:inputText styleClass="readOnlyStyle sched9a numberStyle" value="#{form1702RT.form1702RTBean.sched9NetTaxableIncome}"
+                                                          size="20"  style="width: 98%"
+                                                          disabled="true"></p:inputText>
+                        </td>
+                    </tr>
+                </table></td>
+        </tr>
+    </table>
+</ui:composition>

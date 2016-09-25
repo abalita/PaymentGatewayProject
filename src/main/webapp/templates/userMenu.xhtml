@@ -10,13 +10,18 @@
     <h:body>
         <ui:composition> 
             <b:accordion>
+                <b:panel id="panel0" look="warning">
+                    <f:facet name="heading">
+                        <h:outputText value="Home"/>
+                    </f:facet>                   
+                </b:panel>
                 <b:panel id="panel1" look="warning">
                     <f:facet name="heading">
                         <h:outputText value="Tax Forms"/>
                     </f:facet>
                     <b:listLinks>
-                        <b:navLink  value="Upload Forms" iconAwesome="fa-file-code-o" />
-                        <b:navLink  value="View Tax Forms" iconAwesome="list" /> 
+                        <b:navCommandLink value="Submit Forms" iconAwesome="fa-file-code-o" ajax="true" action="/taxForms/upload.xhtml?faces-redirect=true"/>
+                        <b:navCommandLink value="View Tax Forms" iconAwesome="list" ajax="true" action="/taxForms/view.xhtml?faces-redirect=true"/> 
                     </b:listLinks>
                 </b:panel>
                 <b:panel id="panel2" look="warning">
@@ -24,8 +29,8 @@
                         <h:outputText value="Payments"/>
                     </f:facet>
                     <b:listLinks>
-                        <b:navLink  value="Pay Tax Dues" iconAwesome="money" />
-                        <b:navLink  value="View Payments" iconAwesome="list" /> 
+                        <b:navCommandLink  value="Pay Tax Dues" iconAwesome="money" ajax="true" action="/payments/upload.xhtml?faces-redirect=true"/>
+                        <b:navCommandLink  value="View Payments" iconAwesome="list" ajax="true" action="/payments/view.xhtml?faces-redirect=true"/> 
                     </b:listLinks>
                 </b:panel>
                 <b:panel id="panel3" look="warning">

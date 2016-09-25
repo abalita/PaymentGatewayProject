@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta>
+        <!--ui:include src="print/1702RT_headerp.xhtml" /-->
+        <script type="text/javascript">
+
+            //	jQuery( document ).ready(function() {
+            //		//force chrome to resize print
+            //		if (/chrome/.test(navigator.userAgent.toLowerCase())) {
+            //			jQuery('.bigdiv').css('width', 1000);
+            //		}
+            //		
+            //		jQuery(':text').removeAttr('disabled');
+            //		jQuery(':text').attr('readonly', 'true');
+            //
+            //		jQuery('*').addClass('printcolor');
+            //		jQuery(':image').addClass('hiddenComponents');
+            //		jQuery('.pagebreak:last').removeClass('pagebreak');
+            //
+            ////		window.print();
+            //	});
+        </script>
+        <title>BIR Form 1702-RT</title>
+    </h:head>
+    <h:body>
+        
+                <h:form id="form1702RT">
+                    <p:tabView activeIndex="0" >
+                        <p:tab title="Page 1">
+                            <center>
+                                <ui:include src="print/1702RT_01p.xhtml" />
+                            </center>
+                        </p:tab>
+                        <p:tab title="Page 2">
+                            <center>
+                                <ui:include src="print/1702RT_02p.xhtml" />
+                            </center>
+                        </p:tab>
+                        <p:tab title="Page 3">
+                            <center>
+                                <ui:include src="print/1702RT_03p.xhtml" />
+                            </center>
+                        </p:tab>
+                        <p:tab title="Page 4">
+                            <center>
+                                <ui:include src="print/1702RT_04p.xhtml" />
+                            </center>
+                        </p:tab>
+                        <p:tab title="Page 5">
+                            <center>
+                                <ui:include src="print/1702RT_05p.xhtml" />
+                            </center>
+                        </p:tab>
+                        <p:tab title="Page 6">
+                            <center>
+                                <ui:include src="print/1702RT_06p.xhtml" />
+                            </center>
+                        </p:tab>
+                        <p:tab title="Page 7">
+                            <center>
+                                <ui:include src="print/1702RT_07p.xhtml" />
+                            </center>
+                        </p:tab>
+                        <p:tab title="Page 8">
+                            <center>
+                                <ui:include src="print/1702RT_08p.xhtml" />
+                            </center>
+                        </p:tab>
+                    </p:tabView>
+
+
+                    <div class="bigdiv">
+                        <center>
+
+                            <h:panelGroup>
+                                    <!--p:panelSeries value="#{form1702RT2013.form1702RTBean.listOfForm1702RTAttachments}" var="attachments">
+                                            <div class="pagebreak">
+                                                    <h:panelGroup><ui:include src="print/1702RT_08p.xhtml" /></h:panelGroup>
+                                            </div>
+                                    </p:panelSeries-->
+                            </h:panelGroup>
+                        </center>
+                    </div>
+                </h:form>
+            
+    </h:body>
+</html>

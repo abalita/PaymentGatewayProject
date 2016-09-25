@@ -9,8 +9,9 @@
 
     <body >
         <ui:composition > 
+            
             <h:form style="text-align: center;">   
-                <b:panel title="Login" styleClass="loginPanel" look="warning" collapsible="false" style="font-size: 12px; border-color:#FE9B09;   ">                    
+                <b:panel title="Login" styleClass="loginPanel" look="warning" collapsible="false" style="font-size: 12px;  ">                    
                     <b:messages id="userMessage" showDetail="false" showSummary="false" />  
                     <p:spacer height="10px"/>
                     <b:inputText id="username" placeholder="Username" 
@@ -32,7 +33,7 @@
 
                     <h:panelGrid styleClass="loginPanel">
                         <b:commandButton value="Submit" style="width: 250px; height: 30px;" look="warning"
-                                         action="/home/dashboard.xhtml"> 
+                                         action="/home/home.xhtml?faces-redirect=true"> 
 
                         </b:commandButton>
                         <p:commandLink value="Forgot password?"/>

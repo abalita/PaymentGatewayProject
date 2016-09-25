@@ -1,0 +1,977 @@
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:b="http://bootsfaces.net/ui">
+    <table id="table1"  width="766" cellpadding="2"  style="font-size: 12px; font-family: Arial, Helvetica, sans-serif" bgcolor="#CCCCCC">
+
+        <tr>
+            <td bgcolor="White">
+                <table class="table1702RTWhite" style="border-bottom: none"
+                       cellspacing="0" cellpadding="0" width="766">
+                    <tr>
+                        <td align="center" valign="middle"
+                            style="width: 335px; border-bottom: none"><font size="5">
+                                <b>Annual Income Tax Return</b> </font><br /> <font size="3"> 
+                                <b>Page 5 - Schedules 4, 5 &amp; 6</b></font>
+                        </td>
+                        <td align="center" valign="middle"
+                            style="width: 130px; border-bottom: none">BIR Form No.<br />
+                            <b style="font-size: 1.8em;">1702-RT</b><br />
+                            June 2013</td>
+                        <td align="right" valign="bottom"
+                            style="width: 311px; border-bottom: none; vertical-align: top; padding-top: 10px">
+                            <div style="text-align: right; height: 42px">
+                                <img src="/efps-war/page?pageId=1702-RT06/13P5"
+                                     style="height:35px;width:300px;" /><br /> <span
+                                     style="margin-right: 6px;">1702-RT06/13P5</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table1702RTWhite" style="border-top: 1px solid black;"
+                       width="100%">
+                    <tr>
+                        <td width="39%" style="border-top: none; padding-left: 5px;"
+                            align="left"><b>Taxpayer Identification Number (TIN)</b>
+                        </td>
+                        <td width="71%" style="border-top: none; padding-left: 5px;"
+                            align="left"><b>Registered Name</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="39%" style="border: 1px solid black;" align="left">
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinA}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinB}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                          style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinC}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; float: left;" value="#{form1702RT.form1702RTBean.branchCode}" 
+                                            disabled="true"/>
+                        </td>
+                        <td width="71%" style="border: 1px solid black;" align="left">
+                            <p:inputText  styleClass="readOnlyStyle" style="width: 98%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.registeredName}" 
+                                            disabled="true"/>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>						
+
+                <table bgcolor="#CCCCCC" cellspacing="0" width="766"
+                       style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+
+                    <tr>
+                        <td colspan="4">
+                            <table cellspacing="0" cellpadding="0" width="766"
+                                   style="border: 1px solid #333333; font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+                                <tr>
+                                    <td colspan="4">
+                                        <table class="table1702RT" width="100%" cellspacing="0" cellpadding="0"
+                                               style="border: 1px solid #333333" bgcolor="#CCCCCC">
+                                            <tr>
+                                                <td align="center">
+                                                    <b style="font-size: 13px">Schedule 4 - Ordinary Allowable
+                                                        Itemized Deductions </b><i>(Continued from Previous Page)</i>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#CCCCCC"
+                            style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+                            colspan="4">
+                            <table style="width: 100%; border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px" cellspacing="0">
+
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>30 </b>Security Services
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText value="#{form1702RT.form1702RTBean.sched4HiddenSubtotal}" styleClass="sched4b" style="display: none"/>
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} sched4b numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.securityServices}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>31 </b>SSS, GSIS, Philhealth, HDMF and Other Contributions
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} sched4b numberStyle" 
+                                                       value="#{form1702RT.form1702RTBean.SSSGSISPhilhealthHDMFAndOtherContributions}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>32 </b>Taxes and Licenses
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} sched4b numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.taxesAndLicenses}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>33 </b>Tolling Fees
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} sched4b numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.tollingFees}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>34 </b>Training and Seminars
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} sched4b numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.trainingAndSeminars}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>35 </b>Transportation and Travel
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} sched4b numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.transpotationAndTravel}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: none; border-top-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-right-style: none; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        &#160;&#160;&#160;Others <i>[Specify below; Add additional
+                                            sheet(s), if necessary]</i>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>36 </b>&#160;<p:inputText style="width: 95%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} alphaNumOnly"
+                                                                       value="#{form1702RT.form1702RTBean.othersDescription1}"
+                                                                       maxlength="50"
+                                                                       disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} sched4b numberStyle negativeNumber"
+                                                       value="#{form1702RT.form1702RTBean.othersAmount1}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>37 </b>&#160;<p:inputText style="width: 95%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} alphaNumOnly"
+                                                                       value="#{form1702RT.form1702RTBean.othersDescription2}"
+                                                                       maxlength="50"
+                                                                       disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} sched4b numberStyle negativeNumber"
+                                                       value="#{form1702RT.form1702RTBean.othersAmount2}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>38 </b>&#160;<p:inputText style="width: 95%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} alphaNumOnly"
+                                                                       value="#{form1702RT.form1702RTBean.othersDescription3}"
+                                                                       maxlength="50"
+                                                                       disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} sched4b numberStyle negativeNumber"
+                                                       value="#{form1702RT.form1702RTBean.othersAmount3}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>39 </b>&#160;<p:inputText style="width: 95%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} #{form1702RT.form1702RTBean.othersDescription4Class} alphaNumOnly sched4bDesc"
+                                                                       value="#{form1702RT.form1702RTBean.othersDescription4}"
+                                                                       maxlength="50"
+                                                                       disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule4Style} #{form1702RT.form1702RTBean.othersAmount4Class} sched4b sched4c numberStyle sched4bTotal negativeNumber"
+                                                       value="#{form1702RT.form1702RTBean.othersAmount4}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>		
+        </tr>
+
+        <tr>
+            <td>	
+
+
+                <table bgcolor="#CCCCCC" cellspacing="1" width="766"
+                       style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+
+                    <tr>
+                        <td bgcolor="#CCCCCC"
+                            style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+                            colspan="4">
+                            <table style="width: 100%; border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px" cellspacing="0">
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>40 Total Ordinary Allowable Itemized Deductions </b><i>(Sum of Items 1 to 39)</i>
+                                        <i>(To Part IV Item 35)</i>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  styleClass="readOnlyStyle sched4b numberStyle" style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.totalOrdinaryAllowableItemizedDeductions}"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>		
+        </tr>
+
+        <tr>
+            <td>
+                <table bgcolor="#CCCCCC" cellspacing="0" width="766"
+                       style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+
+                    <tr>
+                        <td colspan="4">
+                            <table cellspacing="0" cellpadding="0" width="766"
+                                   style="border: 1px solid #333333; font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+                                <tr>
+                                    <td colspan="4">
+                                        <table class="table1702RT" width="100%" cellspacing="0" cellpadding="0"
+                                               style="border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: solid; border-top-color: #000000; border-left-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-left-width: 1px" bgcolor="#CCCCCC">
+                                            <tr>
+                                                <td align="center">
+                                                    <b style="font-size: 13px">Schedule 5 - Special Allowable
+                                                        Itemized Deductions </b><i>(Attach additional sheet/s, if
+                                                        necessary)</i>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#CCCCCC"
+                            style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+                            colspan="4">
+                            <table style="width: 100%; border-bottom-width: 1px; border-bottom-style: none; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px" cellspacing="0">
+
+                                <tr>
+
+                                    <td valign="middle" align="center"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 50%">
+                                        Description
+                                    </td>
+                                    <td valign="middle" align="center"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 20%">
+                                        Legal Basis
+                                    </td>
+                                    <td valign="middle" align="center"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        Amount
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 50%">
+                                        <b>1</b>&#160;&#160;<p:inputText style="width: 91%; "  styleClass="#{form1702RT.form1702RTBean.schedule5Style} alphaNumOnly"
+                                                                           value="#{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsDescription1}"
+                                                                           maxlength="37"
+                                                                           disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 20%">
+                                        <p:inputText size="50" style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule5Style} alphaNumOnly"
+                                                       value="#{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsLegalBasis1}" 
+                                                       maxlength="15"
+                                                       disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule5Style} sched5a numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsAmount1}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 50%">
+                                        <b>2</b>&#160;&#160;<p:inputText style="width: 91%; "  styleClass="#{form1702RT.form1702RTBean.schedule5Style} alphaNumOnly"
+                                                                           value="#{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsDescription2}" 
+                                                                           maxlength="37"
+                                                                           disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 20%">
+                                        <p:inputText size="50" style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule5Style} alphaNumOnly"
+                                                       value="#{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsLegalBasis2}" 
+                                                       maxlength="15"
+                                                       disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule5Style} sched5a numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsAmount2}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 50%">
+                                        <b>3</b>&#160;&#160;<p:inputText style="width: 91%; "  styleClass="#{form1702RT.form1702RTBean.schedule5Style} alphaNumOnly"
+                                                                           value="#{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsDescription3}" 
+                                                                           maxlength="37"
+                                                                           disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 20%">
+                                        <p:inputText size="50" style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule5Style} alphaNumOnly"
+                                                       value="#{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsLegalBasis3}" 
+                                                       maxlength="15"
+                                                       disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule5Style} sched5a numberStyle"
+                                                       value="#{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsAmount3}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 50%">
+                                        <b>4</b>&#160;&#160;<p:inputText style="width: 91%; "  styleClass="#{form1702RT.form1702RTBean.schedule5Style} #{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsDescription4Class} alphaNumOnly sched5Desc"
+                                                                           value="#{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsDescription4}" 
+                                                                           maxlength="26"
+                                                                           disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 20%">
+                                        <p:inputText size="50" style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule5Style} #{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsLegalBasis4Class} alphaNumOnly sched5Legal"
+                                                       value="#{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsLegalBasis4}" 
+                                                       maxlength="15"
+                                                       disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "  styleClass="#{form1702RT.form1702RTBean.schedule5Style} #{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsAmount4Class} sched5a sched5b numberStyle sched5Total"
+                                                       value="#{form1702RT.form1702RTBean.specialAllowableItemizedDeductionsAmount4}" 
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table style="width: 100%; border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px" cellspacing="0">
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>5 Total Special Allowable Itemized Deductions </b><i>(Sum of Items 1 to 4)</i>
+                                        <i>(To Part IV Item 36)</i>
+                                    </td>
+
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: none; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  styleClass="readOnlyStyle sched5a numberStyle" style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.totalSpecialAllowableItemizedDeductions}"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>		
+        </tr>
+
+        <tr>
+            <td>
+
+                <table bgcolor="#CCCCCC" cellspacing="1" width="766"
+                       style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+
+                    <tr>
+                        <td colspan="4">
+                            <table cellspacing="0" cellpadding="0" width="766"
+                                   style="border: 1px solid #333333; font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+                                <tr>
+                                    <td colspan="4">
+                                        <table class="table1702RT" width="100%" cellspacing="0" cellpadding="0"
+                                               style="border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: solid; border-top-color: #000000; border-left-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-left-width: 1px" bgcolor="#CCCCCC">
+                                            <tr>
+                                                <td align="center">
+                                                    <b style="font-size: 13px">Schedule 6 - Computation of Net
+                                                        Operating Loss Carry Over (NOLCO)</b>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#CCCCCC"
+                            style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+                            colspan="4">
+                            <table style="width: 100%; border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px" cellspacing="0">
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>1 </b>Gross Income
+                                        <i>(From Part IV Item 34)</i>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText value="#{form1702RT.form1702RTBean.totalGrossIncome}" styleClass="hiddenGrossIncome" style="display: none"/>
+                                        <p:inputText size="50"  styleClass="readOnlyStyle numberStyle sched6k" style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.grossIncome}" 
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>2 </b>Less: Total Deductions Exclusive of NOLCO &amp;
+                                        Deduction Under Special Law
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; " styleClass="readOnlyStyle numberStyle sched6k"
+                                                       value="#{form1702RT.form1702RTBean.lessTotalDeductinsExclusiveOfNOLCOAndDeductionsUnderSpecialLaw}" 
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle" width="150"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+                                        <b>3 </b>Net Operating Loss <i>(To Schedule 6A)</i>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+                                        <p:inputText size="50"  style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.netOperatingLoss}"  styleClass="numberStyle sched6k readOnlyStyle"
+
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>		
+        </tr>
+
+        <tr>
+            <td>
+
+                <table bgcolor="#CCCCCC" cellspacing="0" width="766"
+                       style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+
+                    <tr>
+                        <td colspan="4">
+                            <table cellspacing="0" cellpadding="0" width="766"
+                                   style="border: 1px solid #333333; font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+                                <tr>
+                                    <td colspan="4">
+                                        <table class="table1702RT" width="100%" cellspacing="0" cellpadding="0"
+                                               style="border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: solid; border-top-color: #000000; border-left-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-left-width: 1px" bgcolor="#CCCCCC">
+                                            <tr>
+                                                <td align="center">
+                                                    <b style="font-size: 13px">Schedule 6A - Computation of
+                                                        Available Net Operating Loss Carry Over (NOLCO)</b>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#CCCCCC"
+                            style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+                            colspan="4">
+                            <table style="width: 100%;" cellspacing="0">
+
+                                <tr>
+                                    <td style="width: 70%;">
+                                        <table bgcolor="#CCCCCC" cellspacing="0"
+                                               style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-top-color: #000000; border-left-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px; width: 100%">
+                                            <tr>
+                                                <td bgcolor="#CCCCCC"
+                                                    style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+                                                    colspan="4">
+                                                    <table style="width: 100%; border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center" valign="middle"
+                                                                style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px">
+                                                                Net Operating Loss</td>
+
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td bgcolor="#CCCCCC"
+                                                    style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+                                                    colspan="4">
+                                                    <table style="width: 100%; border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px" cellspacing="0">
+                                                        <tr>
+
+                                                            <td valign="middle" align="center"
+                                                                style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 42%">
+                                                                Year Incurred</td>
+                                                            <td valign="middle" align="center"
+                                                                style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 55%">
+                                                                A) Amount</td>
+
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </td>
+
+                                    <td style="width: 30%;">
+                                        <table bgcolor="#CCCCCC" cellspacing="0" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-top-color: #000000; border-left-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px; width: 100%">
+                                            <tr>
+                                                <td bgcolor="#CCCCCC" style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px; height: 45" colspan="4">
+                                                    <table style="width: 100%; border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; height: 40" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; height: 100%">
+                                                                B) NOLCO Applied Previous Year</td>
+
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </td>
+
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#CCCCCC"
+                            style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+                            colspan="4">
+                            <table style="width: 100%; border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: solid; border-top-color: #000000; border-left-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-left-width: 1px" cellspacing="0">
+
+                                <tr>
+
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 34%">
+                                        <b>4</b>&#160;<p:inputText style="width: 90%; "
+                                                                     maxlength="4"
+                                                                     value="#{form1702RT.form1702RTBean.netOperatingLossYearIncurred1}" 
+                                                                     onkeydown="return NumOnly_keydown(event);"
+                                                                     styleClass="sched6Year readOnlyStyle"
+                                                                     disabled="true"/>
+                                        <p:inputText value="#{form1702RT.form1702RTBean.yearEnded}" styleClass="hiddenYear" style="display: none"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width:33%">
+                                        <p:inputText size="50"  style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.netOperatingLossAmount1}" 
+                                                       styleClass="sched6b numberStyle sched6k readOnlyStyle"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        <p:inputText size="50"  style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.NOLCOAppliedPreviousYear1}" 
+                                                       styleClass="sched6b numberStyle readOnlyStyle"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 34%">
+                                        <b>5</b>&#160;<p:inputText style="width: 90%; "
+                                                                     maxlength="4"
+                                                                     value="#{form1702RT.form1702RTBean.netOperatingLossYearIncurred2}" 
+                                                                     onkeydown="return NumOnly_keydown(event);"
+                                                                     styleClass="#{form1702RT.form1702RTBean.schedule6Style}"
+                                                                     disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        <p:inputText size="50"  style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.netOperatingLossAmount2}" 
+                                                       styleClass="#{form1702RT.form1702RTBean.schedule6Style} sched6c numberStyle"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        <p:inputText size="50"  style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.NOLCOAppliedPreviousYear2}" 
+                                                       styleClass="#{form1702RT.form1702RTBean.schedule6Style} sched6c numberStyle"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 34%">
+                                        <b>6</b>&#160;<p:inputText style="width: 90%; "
+                                                                     maxlength="4"
+                                                                     value="#{form1702RT.form1702RTBean.netOperatingLossYearIncurred3}" 
+                                                                     onkeydown="return NumOnly_keydown(event);"
+                                                                     styleClass="#{form1702RT.form1702RTBean.schedule6Style}"
+                                                                     disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width:33%">
+                                        <p:inputText size="50"  style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.netOperatingLossAmount3}" 
+                                                       styleClass="#{form1702RT.form1702RTBean.schedule6Style} sched6d numberStyle"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        <p:inputText size="50"  style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.NOLCOAppliedPreviousYear3}" 
+                                                       styleClass="#{form1702RT.form1702RTBean.schedule6Style} sched6d numberStyle"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 34%">
+                                        <b>7</b>&#160;<p:inputText style="width: 90%; "
+                                                                     maxlength="4"
+                                                                     value="#{form1702RT.form1702RTBean.netOperatingLossYearIncurred4}" styleClass="#{form1702RT.form1702RTBean.schedule6Style} #{form1702RT.form1702RTBean.netOperatingLossYearIncurred4Class} sched6aYearIncurred"
+                                                                     onkeydown="return NumOnly_keydown(event);"
+                                                                     disabled="true"/>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width:33%">
+                                        <p:inputText size="50"  style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.netOperatingLossAmount4}" 
+                                                       styleClass="#{form1702RT.form1702RTBean.schedule6Style} #{form1702RT.form1702RTBean.netOperatingLossAmount4Class} sched6e sched6f numberStyle sched6aAmount"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width:33%">
+                                        <p:inputText size="50"  style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.NOLCOAppliedPreviousYear4}" 
+                                                       styleClass="#{form1702RT.form1702RTBean.schedule6Style} #{form1702RT.form1702RTBean.NOLCOAppliedPreviousYear4Class} sched6e sched6g numberStyle sched6aNOLCOPrev"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <table bgcolor="#CCCCCC" cellspacing="0" width="766"
+                       style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+
+                    <tr>
+                        <td colspan="4">
+                            <table cellspacing="0" cellpadding="0" width="766"
+                                   style="border: 1px solid #333333; font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+                                <tr>
+                                    <td colspan="4">
+                                        <table class="table1702RT" width="100%" cellspacing="0" cellpadding="0"
+                                               style="border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: solid; border-top-color: #000000; border-left-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-left-width: 1px" bgcolor="#CCCCCC">
+                                            <tr>
+                                                <td><b>Continuation of Schedule 6A </b><i>(Item numbers
+                                                        continue from the table above)</i></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>		
+        </tr>
+
+        <tr>
+            <td>
+
+                <table bgcolor="#CCCCCC" cellspacing="0" width="766"
+                       style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+
+                    <tr>
+                        <td bgcolor="#CCCCCC"
+                            style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+                            colspan="4">
+                            <table style="width: 100%; border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px" cellspacing="0">
+
+                                <tr>
+
+                                    <td
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 34%">
+                                        C) NOLCO Expired</td>
+                                    <td
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        D) NOLCO Applied Current Year</td>
+                                    <td
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        E) Net Operating Loss (Unapplied)</td>
+
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#CCCCCC"
+                            style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+                            colspan="4">
+                            <table style="width: 100%; border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px" cellspacing="0">
+
+                                <tr>
+
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 34%">
+                                        <b>4</b>&#160;&#160;<p:inputText style="width: 90%; " 
+                                                                           value="#{form1702RT.form1702RTBean.NOLCOExpired1}" 
+                                                                           styleClass="sched6b numberStyle readOnlyStyle"
+                                                                           disabled="true"></p:inputText>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        <p:inputText size="50"  style="width: 97%; "
+                                                       value="#{form1702RT.form1702RTBean.NOLCOAppliedCurrentYear1}" 
+                                                       styleClass="readOnlyStyle sched6a sched6b numberStyle"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        <p:inputText size="50"  style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.netOperatingLossUnapplied1}" 
+                                                       styleClass="sched6b numberStyle readOnlyStyle"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 34%">
+                                        <b>5</b>&#160;&#160;<p:inputText style="width: 90%; " 
+                                                                           value="#{form1702RT.form1702RTBean.NOLCOExpired2}" 
+                                                                           styleClass="#{form1702RT.form1702RTBean.schedule6Style} sched6c numberStyle"
+                                                                           disabled="true"></p:inputText>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        <p:inputText size="50"  style="width: 97%; "
+                                                       value="#{form1702RT.form1702RTBean.NOLCOAppliedCurrentYear2}" 
+                                                       styleClass="#{form1702RT.form1702RTBean.schedule6Style} sched6a sched6c numberStyle"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        <p:inputText size="50"  style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.netOperatingLossUnapplied2}" 
+                                                       styleClass="sched6c numberStyle readOnlyStyle"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 34%">
+                                        <b>6</b>&#160;&#160;<p:inputText style="width: 90%; " 
+                                                                           value="#{form1702RT.form1702RTBean.NOLCOExpired3}" 
+                                                                           styleClass="#{form1702RT.form1702RTBean.schedule6Style} sched6d numberStyle"
+                                                                           disabled="true"></p:inputText>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        <p:inputText size="50"  style="width: 97%; "
+                                                       value="#{form1702RT.form1702RTBean.NOLCOAppliedCurrentYear3}" 
+                                                       styleClass="#{form1702RT.form1702RTBean.schedule6Style} sched6a sched6d numberStyle"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        <p:inputText size="50"  style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.netOperatingLossUnapplied3}" 
+                                                       styleClass="sched6d numberStyle readOnlyStyle"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 34%">
+                                        <b>7</b>&#160;&#160;<p:inputText style="width: 90%; " 
+                                                                           value="#{form1702RT.form1702RTBean.NOLCOExpired4}" 
+                                                                           styleClass="#{form1702RT.form1702RTBean.schedule6Style} #{form1702RT.form1702RTBean.NOLCOExpired4Class} sched6e sched6h numberStyle sched6aNOLCOExpired"
+                                                                           disabled="true"></p:inputText>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        <p:inputText size="50"  style="width: 97%; "
+                                                       value="#{form1702RT.form1702RTBean.NOLCOAppliedCurrentYear4}" 
+                                                       styleClass="#{form1702RT.form1702RTBean.schedule6Style} #{form1702RT.form1702RTBean.NOLCOAppliedCurrentYear4Class} sched6a sched6e sched6i numberStyle sched6aNOLCOCurr"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 33%">
+                                        <p:inputText size="50"  style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.netOperatingLossUnapplied4}" 
+                                                       styleClass="#{form1702RT.form1702RTBean.netOperatingLossUnapplied4Class} sched6e numberStyle sched6aNetOpLoss readOnlyStyle sched6j"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle"
+                                        style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px;">
+                                        <b>8 Total NOLCO</b>
+                                        <br/>
+                                        <i>(Sum of Items 4D to 7D)</i>
+                                        <i>(To Part IV Item 37)</i>
+                                    </td>
+                                    <td valign="middle"
+                                        style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px;">
+                                        <p:inputText size="50"  styleClass="readOnlyStyle sched6a numberStyle" style="width: 98%; "
+                                                       value="#{form1702RT.form1702RTBean.totalNOLCO}"
+                                                       disabled="true"></p:inputText>
+                                    </td>
+                                    <td style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px;">
+                                        &#160;
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>		
+        </tr>
+    </table>
+</ui:composition>

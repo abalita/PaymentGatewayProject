@@ -116,13 +116,10 @@ a:link:hover, a:visited:hover  {
 
 .navbar{
     /*margin-bottom: 0px;*/
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .panel-title{
-    font-size: 12px
+    font-size: 12px !important;
 }
 
-.panel-heading{
-        border-color:#FE9B09 !important;
-}

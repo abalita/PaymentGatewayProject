@@ -1,0 +1,748 @@
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:b="http://bootsfaces.net/ui">
+    <table width="766" bgcolor="#CCCCCC">
+        <tr>
+            <td>
+                <h:panelGroup>
+                    <!--ui:include src="1702RT_guidelinesp.xhtml"/-->
+                </h:panelGroup> 
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="White">
+                <table width="100%" cellspacing="0">
+                    <tr>
+                        <td width="9%" valign="bottom">For BIR<br/> Use Only
+                        </td>
+                        <td valign="bottom">BCS/<br/> Item
+                        </td>
+                        <td align="right" valign="bottom">
+                            <img alt=""
+                                 src="/efps-war/page?pageId=1702-RT06/13P1" style="height:35px;width:300px;" />
+                            <br/>
+                            1702-RT06/13P1
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <table width="100%" cellspacing="0" cellpadding="0"
+                       style="border: 1px solid #333333" bgcolor="White">
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0">
+                                <tr>
+                                    <td width="6%" align="center" style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-style: solid; border-right-width: 1px; border-right-style: none; border-color: #333333; border-left-width: 1px; border-top-width: 1px">
+                                        <img style="width:60px;height:70px;" alt="" src="/efps-war/images/birflog.gif" />
+                                    </td>
+                                    <td width="21%"
+                                        style="font-size:10px; border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-style: none; border-right-width: 1px; border-right-style: solid; border-color: #333333; border-left-width: 1px; border-top-width: 1px"><b>Republika ng
+                                            Pilipinas<br/> Kagawaran ng Pananalapi<br/> Kawanihan
+                                            ng Rentas Internas
+                                        </b></td>
+                                    <td width="59%" align="center"
+                                        style="border: 1px solid #333333"><font size="4"><b>Annual
+                                                Income Tax Return</b></font><br/> <b>For Corporation,
+                                            Partnership and Other Non-Individual<br/> Taxpayer
+                                            Subject Only to REGULAR Income Tax Rate
+                                        </b><br/> <i>Enter all required information in CAPITAL
+                                            LETTERS. Mark applicable boxes with an "X".<br/> Two
+                                            Copies MUST be filed with the BIR and one held by the
+                                            taxpayer.
+                                        </i></td>
+                                    <td align="center" valign="middle"
+                                        style="border: 1px solid #333333">BIR Form No.<br/> <b style="font-size: 1.8em;">1702-RT</b><br/>
+                                        June 2013<br/> <b>Page 1</b></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0" bgcolor="#CCCCCC">
+                                <td width="23%" style="border: 1px solid #333333">
+                                    <table width="100%">
+                                        <tr>
+                                            <td><b>1</b> For</td>
+                                            <td>
+                                                <div >
+                                                    <p:selectOneRadio disabled="true" id="rbYearType"
+                                                                        value="#{form1702RT.form1702RTBean.calendarFiscal}">
+                                                        <f:selectItem itemValue="C" itemLabel="Calendar" />
+                                                        <f:selectItem itemValue="F" itemLabel="Fiscal" />
+                                                    </p:selectOneRadio>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><b>2</b> Year Ended (MM/20YY)</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <p:inputText styleClass="readOnlyStyle" size="2"
+                                                                           value="#{form1702RT.form1702RTBean.yearEndedMonth}" 
+                                                                           disabled="true">
+                                                </p:inputText>
+                                                &#160;
+                                                <p:inputText size="4" maxlength="4" 
+                                                                                     onkeydown="return NumOnly_keydown(event);"
+                                                                                     value="#{form1702RT.form1702RTBean.yearEnded}" 
+                                                                                     disabled="true" styleClass="readOnlyStyle" /></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%" style="border: 1px solid #333333"><b>3</b>
+                                    Amended Return? 
+                                    <div>
+                                        <p:selectOneRadio id="amendedReturn" disabled="true"
+                                                            value="#{form1702RT.form1702RTBean.amendedReturn}">
+                                            <f:selectItem itemValue="Y" itemLabel="Yes" />
+                                            <f:selectItem itemValue="N" itemLabel="No" />
+                                        </p:selectOneRadio>
+                                    </div>
+                                </td>
+                                <td width="17%" style="border: 1px solid #333333"><b>4</b>
+                                    Short Period Return? 
+                                    <div>
+                                        <p:selectOneRadio id="rbShortPeriodReturn"
+                                                            value="#{form1702RT.form1702RTBean.shortPeriodReturn}"
+                                                            disabled="true">
+                                            <f:selectItem itemValue="Y" itemLabel="Yes" />
+                                            <f:selectItem itemValue="N" itemLabel="No" />
+                                        </p:selectOneRadio>
+                                    </div>
+                                </td>
+                                <td style="border: 1px solid #333333">
+                                    <table width="100%">
+                                        <tr>
+                                            <td colspan="3"><b>5</b> Alphanumeric Tax Code (ATC)</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="middle" align="left"><p:inputText size="7"  styleClass="readOnlyStyle" id="alphanumericTaxCode1"
+                                                                                            value="#{form1702RT.form1702RTBean.alphanumericTaxCode1}"
+                                                                                            disabled="true"/></td>
+                                            <td valign="middle" align="right"><p:inputText id="alphanumericTaxCodeDescription1"
+                                                                                             value="#{form1702RT.form1702RTBean.alphanumericTaxCodeDescription1}"
+                                                                                             styleClass="readOnlyStyle" style="width:218px;"
+                                                                                             disabled="true"/></td>
+                                            <td valign="middle" align="left">
+                                                <div>
+                                                    <p:selectBooleanCheckbox id="taxCodeCheckBox1" 
+                                                                               value="#{form1702RT.form1702RTBean.alphanumericTaxCodeCheckBox1}"
+                                                                               disabled="true"/>
+                                                </div>
+                                                <p:inputText styleClass="hiddenComponents"></p:inputText>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="middle" align="left"><p:inputText id="alphanumericTaxCode2"                                                                                             
+                                                                                            value="#{form1702RT.form1702RTBean.alphanumericTaxCode2}"
+                                                                                            disabled="true" styleClass="readOnlyStyle" size="7">
+                                                </p:inputText></td>
+                                            <td valign="middle" align="right"><p:inputText style="width:218px;" styleClass="readOnlyStyle"
+                                                                                             value="#{form1702RT.form1702RTBean.alphanumericTaxCodeDescription2}" 
+                                                                                             disabled="true"/>
+                                            </td>
+                                            <td valign="middle" align="left">
+                                                <div>
+                                                    <p:selectBooleanCheckbox id="taxCodeCheckBox2"
+                                                                               value="#{form1702RT.form1702RTBean.alphanumericTaxCodeCheckBox2}" 
+                                                                               disabled="true"/>
+                                                </div>
+                                                <p:inputText styleClass="hiddenComponents" ></p:inputText>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" cellspacing="0" cellpadding="0"
+                       style="border: 1px solid #333333" bgcolor="#CCCCCC">
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0">
+                                <tr>
+                                    <td align="center" style="border: 1px solid #333333"><b>Part
+                                            I - Background Information</b></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0">
+                                <tr>
+                                    <td width="27%" style="border: 1px solid #333333"><b>6</b>
+                                        Taxpayer Identification Number (TIN)</td>
+                                    <td width="47%" style="border: 1px solid #333333">
+                                        <font face="Arial, Helvetica, sans-serif" size="1">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font>
+                                        <p:inputText id="txtTINa" size="3" maxlength="3"
+                                                       styleClass="#{form1702RT.form1702RTBean.tinAClass}"
+                                                       value="#{form1702RT.form1702RTBean.tinA}"
+                                                       disabled="true"/>
+                                        - <p:inputText id="txtTINb" size="3" maxlength="3"
+                                                         styleClass="#{form1702RT.form1702RTBean.tinBClass}"
+                                                         value="#{form1702RT.form1702RTBean.tinB}"
+                                                         disabled="true"/>
+                                        - <p:inputText id="txtTINc" size="3" maxlength="3"
+                                                         styleClass="#{form1702RT.form1702RTBean.tinCClass}"
+                                                         value="#{form1702RT.form1702RTBean.tinC}"
+                                                         disabled="true"/>
+                                        - <p:inputText id="txtBranch" size="3" maxlength="4"
+                                                         styleClass="#{form1702RT.form1702RTBean.branchCodeClass}"
+                                                         value="#{form1702RT.form1702RTBean.branchCode}"
+                                                         disabled="true"/>
+                                    </td>
+                                    <td width="12%" align="right" style="border: 1px solid #333333">
+                                        <b>7</b> RDO Code
+                                    </td>
+                                    <td style="border: 1px solid #333333"><p:inputText
+                                            style="width: 98%"   styleClass="#{form1702RT.form1702RTBean.rdoCodeClass}"
+                                            value="#{form1702RT.form1702RTBean.rdoCode}" 
+                                            disabled="true"/></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0">
+                                <tr>
+                                    <td width="70%" style="border: 1px solid #333333"><b>8</b>
+                                        Date of Incorporation/Organization (MM/DD/YYYY)</td>
+                                    <td style="border: 1px solid #333333">
+
+                                        <p:calendar
+                                            id="dateOrganization"
+                                            value="#{form1702RT.form1702RTBean.dateIncorporation}"                                             
+                                            style="width: 98%" 
+                                            readonly="#{form1702RT.form1702RTBean.dateIncorporationDisabled}"
+                                            onkeydown="return NumSlashOnly_keydown(event, this);"
+                                            styleClass="#{form1702RT.form1702RTBean.dateIncorporationClass} dateStyle"
+                                            disabled="true">
+                                            <f:convertDateTime pattern="MM/dd/yyyy" type="date" timeZone="#{form1702RT.timeZone}"/>
+                                        </p:calendar>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0">
+                                <tr>
+                                    <td style="border: 1px solid #333333"><b>9 </b> Registered
+                                        Name <i>(Enter only 1 letter per box using CAPITAL
+                                            LETTERS)</i></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #333333"><p:inputText
+                                            style="width: 98%" styleClass="#{form1702RT.form1702RTBean.registeredNameClass} alphaNumOnly"
+                                            value="#{form1702RT.form1702RTBean.registeredName}" 
+                                            disabled="true"/> <p:inputText
+                                            style="width: 98%"   styleClass="readOnlyStyle" 
+                                            disabled="true"/></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #333333"><b>10 </b>
+                                        Registered Address <i>(Indicate complete registered
+                                            address)</i></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #333333"><p:inputText
+                                            style="width: 98%"   styleClass="#{form1702RT.form1702RTBean.registeredAddressClass} alphaNumOnly"
+                                            value="#{form1702RT.form1702RTBean.registeredAddress}" 
+                                            disabled="true"/>
+                                        <p:inputText style="width: 98%"   styleClass="readOnlyStyle" 
+                                                       disabled="true"/></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0">
+                                <tr>
+                                    <td width="36%" style="border: 1px solid #333333"><b>11
+                                        </b> Contact Number</td>
+                                    <td style="border: 1px solid #333333"><b>12 </b> Email
+                                        Address</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #333333"><p:inputText
+                                            style="width: 98%"   styleClass="readOnlyStyle alphaNumOnly"
+                                            value="#{form1702RT.form1702RTBean.contactNumber}" 
+                                            disabled="true"/></td>
+                                    <td style="border: 1px solid #333333"><p:inputText
+                                            style="width: 98%"   styleClass="readOnlyStyle alphaNumOnly"
+                                            value="#{form1702RT.form1702RTBean.emailAddress}" 
+                                            disabled="true"/></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0">
+                                <tr>
+                                    <td width="80%" style="border: 1px solid #333333"><b>13
+                                        </b> Main Line of Business</td>
+                                    <td style="border: 1px solid #333333"><b>14 </b> PSIC Code
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #333333"><p:inputText
+                                            style="width: 98%"   styleClass="readOnlyStyle alphaNumOnly"
+                                            value="#{form1702RT.form1702RTBean.mainLineBusiness}" 
+                                            disabled="true"/></td>
+                                    <td style="border: 1px solid #333333"><p:inputText
+                                            style="width: 98%"   styleClass="readOnlyStyle alphaNumOnly"
+                                            maxlength="4"
+                                            value="#{form1702RT.form1702RTBean.psicCode}" 
+                                            disabled="true"/></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" cellspacing="0" cellpadding="0"
+                       style="border: 1px solid #333333" bgcolor="#CCCCCC">
+                    <tr>
+                        <td width="20%"
+                            style="border-top-style: solid; border-top-width: 1px; border-bottom-style: solid; border-bottom-width: 1px; border-left-style: solid; border-left-width: 1px; border-color: #333333">
+                            <b>15 </b> Method of Deductions
+                        </td>
+                        <td style="border-top-style: solid; border-top-width: 1px; border-bottom-style: solid; border-bottom-width: 1px; border-right-style: solid; border-right-width: 1px; border-color: #333333">
+                            <div>
+                                <p:inputText styleClass="hiddenComponents" ></p:inputText>
+                                <p:selectOneRadio id = 'rbMethodOfDeduction'
+                                                    value="#{form1702RT.form1702RTBean.methodDeductions}"                                                     
+                                                    disabled="true">
+                                    <f:selectItem itemValue="I"
+                                                  itemLabel="Itemized Deductions [Section 34 (A-J), NIRC]"/>
+                                    <f:selectItem itemValue="O"
+                                                  itemLabel="Optional Standard Deduction (OSD) - 40% of Gross Income [Section 34(L), NIRC as amended by RA No. 9504]"/>
+                                </p:selectOneRadio>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" cellspacing="0" cellpadding="0"
+                       style="border: 1px solid #333333" bgcolor="#CCCCCC">
+                    <tr>
+                        <td width="65%" align="right"
+                            style="border-top-style: solid; border-top-width: 1px; border-bottom-style: solid; border-bottom-width: 1px; border-left-style: solid; border-left-width: 1px; border-color: #333333">
+                            <b>Part II - Total Tax Payable</b>&#160;&#160;&#160;&#160;
+                        </td>
+                        <td align="center"
+                            style="border-top-style: solid; border-top-width: 1px; border-bottom-style: solid; border-bottom-width: 1px; border-right-style: solid; border-right-width: 1px; border-color: #333333">
+                            <i>(Do NOT enter Centavos)</i>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" cellspacing="0" cellpadding="0"
+                       style="border: 1px solid #333333" bgcolor="#CCCCCC">
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0" bgcolor="#CCCCCC">
+                                <tr>
+                                    <td width="65%" style="border: 1px solid #333333">
+                                        <b>16</b> Total Income Tax Due (Overpayment)
+                                        <i style="font-size: 10px">(From Part IV Item 44)</i>
+                                    </td>
+                                    <td style="border: 1px solid #333333"><p:inputText
+
+                                            style="width: 98%"   styleClass="readOnlyStyle numberStyle"
+                                            value="#{form1702RT.form1702RTBean.totalIncomeTaxDue16}" 
+                                            disabled="true"/></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #333333">
+                                        <b>17</b> Less: Total Tax Credits/Payments
+                                        <i style="font-size: 10px">(From Part IV Item 45)</i>
+                                    </td>
+                                    <td style="border: 1px solid #333333"><p:inputText
+
+                                            style="width: 98%"   styleClass="readOnlyStyle numberStyle"
+                                            value="#{form1702RT.form1702RTBean.totalTaxCreditsPayments17}" 
+                                            disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #333333">
+                                        <b>18</b> Net Tax Payable (Overpayment) <i style="font-size: 10px">(Item 16 Less Item 17)</i>
+                                        <i style="font-size: 10px">(From Part IV Item 46)</i>
+                                    </td>
+                                    <td style="border: 1px solid #333333"><p:inputText
+
+                                            style="width: 98%"   styleClass="readOnlyStyle numberStyle"
+                                            value="#{form1702RT.form1702RTBean.netTaxPayable18}" 
+                                            disabled="true"/></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #333333">
+                                        <b>19</b> Add: Total Penalties
+                                        <i style="font-size: 10px">(From Part IV Item 50)</i>
+                                    </td>
+                                    <td style="border: 1px solid #333333"><p:inputText
+
+                                            style="width: 98%"   styleClass="readOnlyStyle numberStyle"
+                                            value="#{form1702RT.form1702RTBean.totalPenalties19}" 
+                                            disabled="true"/></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #333333">
+                                        <b>20 TOTAL AMOUNT PAYABLE (Overpayment)</b> <i style="font-size: 10px">(Sum of Item 18 and 19)</i>
+                                        <i style="font-size: 10px">(From Part IV Item 51)</i>
+                                    </td>
+                                    <td style="border: 1px solid #333333"><p:inputText
+                                            style="width: 98%"   styleClass="readOnlyStyle numberStyle"
+                                            value="#{form1702RT.form1702RTBean.totalAmountPayable}" 
+                                            disabled="true"><f:convertNumber pattern="#,###;(#,###)" /></p:inputText>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0">
+                                <tr>
+                                    <td style="border: 1px solid #333333"><b>21</b> If
+                                        Overpayment, mark "X" one box only <i>(Once the choice is
+                                            made, the same is irrevocable)</i></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #333333">
+                                        <div>
+                                            <p:inputText styleClass="hiddenComponents" ></p:inputText>
+                                            <p:selectOneRadio id="rbOverpayment"
+                                                                value="#{form1702RT.form1702RTBean.refundType}"                                                                
+                                                                disabled="true">
+                                                <f:selectItem itemValue="R" itemLabel="To be refunded" />
+                                                <f:selectItem itemValue="T"
+                                                              itemLabel="To be issued a Tax Credit Certificate (TCC)" />
+                                                <f:selectItem itemValue="C"
+                                                              itemLabel="To be carried over as tax credit next year/quarter" />
+                                            </p:selectOneRadio>
+                                            <p:radioButton for="rbOverpayment" itemIndex="0"></p:radioButton>
+                                            <p:radioButton for="rbOverpayment" itemIndex="1"></p:radioButton>
+                                            <p:radioButton for="rbOverpayment" itemIndex="2"></p:radioButton>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" cellspacing="0" cellpadding="0"
+                       style="border: 1px solid #333333">
+                    <tr>
+                        <td colspan="2" style="border: 1px solid #333333; font-size: 8px">We declare
+                            under the penalties of perjury, that this annual return has been
+                            made in good faith, verified by us, and to the best of our
+                            knowledge and belief, is true and correct pursuant to the
+                            provisions of the National Internal Revenue Code, as amended, and
+                            the regulations issued under authority thereof. <i>(If
+                                Authorized Representative, attach authorization letter and indicate
+                                TIN)</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%" style="border: 1px solid #333333"><br/> <br/>
+                        </td>
+                        <td style="border: 1px solid #333333"><br/> <br/></td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="border: 1px solid #333333; font-size: 8px">
+                            Signature over printed name of President/Principal
+                            Officer/Authorized Representative</td>
+                        <td align="center" style="border: 1px solid #333333; font-size: 8px">
+                            Signature over printed name of Treasurer/Assistant Treasurer</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <table width="100%" cellspacing="0">
+                                <tr>
+                                    <td width="17%" align="center"
+                                        style="border: 1px solid #333333">Title of Signatory</td>
+                                    <td width="57%" style="border: 1px solid #333333"><p:inputText
+                                            style="width: 98%" readonly="true" styleClass="readOnlyStyle"
+                                            value="#{form1702RT.form1702RTBean.titleOfSignatory}" 
+                                            onkeyup="javascript:formatToUpperCase(event, this);"
+                                            disabled="true"/></td>
+                                    <td width="20%" align="center"
+                                        style="border: 1px solid #333333">Number of pages filed</td>
+                                    <td style="border: 1px solid #333333"><p:inputText styleClass="readOnlyStyle"
+                                                                                         style="width: 98%;text-align:right;" readonly="true"
+                                                                                         value="#{form1702RT.form1702RTBean.numberOfPagesFiled}" 
+                                                                                         disabled="true"/></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" cellspacing="0" cellpadding="0"
+                       style="border: 1px solid #333333" bgcolor="#CCCCCC">
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0">
+                                <tr>
+                                    <td width="47%" style="border: 1px solid #333333"><b>22</b>
+
+                                        <p:selectOneRadio id="regType" value="#{form1702RT.form1702RTBean.ctcRegType}"                                                           
+                                                            disabled="true" >
+                                            <f:selectItem itemValue="CTC" itemLabel="Community Tax Certificate (CTC) Number" />
+                                            <f:selectItem itemValue="SEC" itemLabel="SEC Reg No." />
+                                        </p:selectOneRadio>
+
+                                        <p:radioButton for="regType" itemIndex="0"></p:radioButton>
+                                        <p:radioButton for="regType" itemIndex="1"></p:radioButton>
+
+                                    </td>
+                                    <td width="16%" style="border: 1px solid #333333"><p:inputText
+                                            style="width: 98%" 
+                                            onkeypress="return checkCTCSECInput(event, '#{form1702RT.form1702RTBean.ctcRegType}');"
+                                            onblur="convertToUpperCase(this);"
+                                            value="#{form1702RT.form1702RTBean.communityTaxCertificateNumber}" 		
+                                            disabled="true"/>
+                                    </td>
+                                    <td width="12%" style="border: 1px solid #333333; font-size: 10px"><b>23</b>
+                                        Date of Issue (MM/DD/YYYY)</td>
+                                    <td align="center" valign="middle" style="border: 1px solid #333333">
+                                        <p:calendar id="dateCtcDateIssue" value="#{form1702RT.form1702RTBean.ctcDateIssue}" style="width:100%"
+                                                             styleClass="dateStyle" 
+                                                             disabled="true" onkeydown="return NumSlashOnly_keydown(event, this);" >
+                                            <f:convertDateTime pattern="MM/dd/yyyy" type="date" timeZone="#{form1702RT.timeZone}" />
+                                        </p:calendar>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0">
+                                <tr>
+                                    <td width="17%" style="border: 1px solid #333333"><b>24</b>
+                                        Place of Issue</td>
+                                    <td width="50%" style="border: 1px solid #333333"><p:inputText
+                                            style="width: 98%"
+                                            value="#{form1702RT.form1702RTBean.ctcPlaceIssue}" 
+                                            styleClass="alphaNumOnly"
+                                            maxlength="55"
+                                            disabled="true"/></td>
+                                    <td width="12%" style="border: 1px solid #333333"><b>25</b>
+                                        Amount, if CTC</td>
+                                    <td style="border: 1px solid #333333"><p:inputText styleClass="numberStyle #{form1702RT.form1702RTBean.ctcAmountStyle}"
+                                                                                         style="width: 98%"  
+                                                                                         value="#{form1702RT.form1702RTBean.ctcAmount}" 
+                                                                                         disabled="true"><f:convertNumber pattern="#,###;(#,###)" /></p:inputText></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" cellspacing="0" cellpadding="0"
+                       style="border: 1px solid #333333" bgcolor="#CCCCCC">
+                    <tr>
+                        <td colspan="5" align="center" style="border: 1px solid #333333">
+                            <b>Part III - Details of Payment</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%" align="center" style="border: 1px solid #333333">
+                            <b>Details of Payment</b>
+                        </td>
+                        <td width="15%" align="center" style="border: 1px solid #333333; font-size: 10px">
+                            <b>Drawee Bank/Agency</b>
+                        </td>
+                        <td width="16%" align="center" style="border: 1px solid #333333">
+                            <b>Number</b>
+                        </td>
+                        <td width="24%" align="center" style="border: 1px solid #333333">
+                            <b>Date</b> <i>(MM/DD/YYYY)</i>
+                        </td>
+                        <td align="center" style="border: 1px solid #333333"><b>Amount</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #333333"><b>26</b> Cash/Bank
+                            Debit Memo</td>
+                        <td style="border: 1px solid #333333"><p:inputText
+                                style="width: 97%" styleClass="readOnlyStyle"
+                                value="#{form1702RT.form1702RTBean.payment.cashBankDebitMemoDraweeBank}" 
+                                onkeyup="javascript:formatToUpperCase(event, this);"
+                                disabled="true"/>
+                        </td>
+                        <td style="border: 1px solid #333333"><p:inputText styleClass="readOnlyStyle"
+                                                                             style="width: 97%" 
+                                                                             value="#{form1702RT.form1702RTBean.payment.cashBankDebitMemoNumber}" 
+                                                                             disabled="true"/>
+                        </td>
+                        <td align="center" valign="middle" style="border: 1px solid #333333">
+                            <p:calendar 
+                                id="dateCashBank" onkeydown="return false;"
+                                value="#{form1702RT.form1702RTBean.payment.cashBankDebitMemoDate}"
+                                
+                                readonly="true"
+                                styleClass="readOnlyStyle"                                
+                                style="width:100%" 
+                                disabled="true">
+                                <f:convertDateTime pattern="MM/dd/yyyy" type="date" timeZone="#{form1702RT.timeZone}" />
+                            </p:calendar>
+                        </td>
+                        <td style="border: 1px solid #333333"><p:inputText styleClass="numberStyle readOnlyStyle"
+                                                                             style="width: 98%" 
+                                                                             value="#{form1702RT.form1702RTBean.payment.cashBankDebitMemoAmount}" 
+                                                                             disabled="true"></p:inputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #333333"><b>27</b> Check</td>
+                        <td style="border: 1px solid #333333"><p:inputText
+                                style="width: 97%" styleClass="readOnlyStyle"
+                                value="#{form1702RT.form1702RTBean.payment.checkDraweeBank}" 
+                                onkeyup="javascript:formatToUpperCase(event, this);"
+                                disabled="true"/></td>
+                        <td style="border: 1px solid #333333"><p:inputText styleClass="readOnlyStyle"
+                                                                             style="width: 97%" 
+                                                                             value="#{form1702RT.form1702RTBean.payment.checkNumber}" 
+                                                                             disabled="true"/></td>
+                        <td align="center" valign="middle" style="border: 1px solid #333333">
+                            <p:calendar 
+                                id="dateCheckDate" onkeydown="return false;"
+                                value="#{form1702RT.form1702RTBean.payment.checkDate}"
+                                
+                                readonly="true"
+                                styleClass="readOnlyStyle"
+                                style="width:100%" 
+                                disabled="true">
+                                <f:convertDateTime pattern="MM/dd/yyyy" type="date" timeZone="#{form1702RT.timeZone}"/>
+                            </p:calendar>
+                        </td>
+                        <td style="border: 1px solid #333333"><p:inputText styleClass="numberStyle readOnlyStyle"
+                                                                             style="width: 98%" 
+                                                                             value="#{form1702RT.form1702RTBean.payment.checkAmount}" 
+                                                                             disabled="true"></p:inputText></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border: 1px solid #333333"><b>28</b>
+                            Tax Debit Memo</td>
+                        <td style="border: 1px solid #333333"><p:inputText styleClass="readOnlyStyle"
+                                                                             style="width: 97%" 
+                                                                             value="#{form1702RT.form1702RTBean.payment.taxDebitMemoNumber}" 
+                                                                             disabled="true"/></td>
+                        <td align="center" valign="middle" style="border: 1px solid #333333">
+                            <p:calendar 
+                                id="dateTaxDebitMemoNumber" onkeydown="return false;"
+                                value="#{form1702RT.form1702RTBean.payment.taxDebitMemoDate}"
+                                
+                                readonly="true"
+                                styleClass="readOnlyStyle"
+                                style="width:100%" 
+                                disabled="true">
+                                <f:convertDateTime pattern="MM/dd/yyyy" type="date" timeZone="#{form1702RT.timeZone}"/>
+                            </p:calendar>
+                        </td>
+                        <td style="border: 1px solid #333333"><p:inputText styleClass="numberStyle readOnlyStyle"
+                                                                             style="width: 98%" 
+                                                                             value="#{form1702RT.form1702RTBean.payment.taxDebitMemoAmount}" 
+                                                                             disabled="true"></p:inputText></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="border: 1px solid #333333"><b>29</b>
+                            Others <i>(Specify Below)</i></td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #333333"><p:inputText
+                                style="width: 97%" styleClass="readOnlyStyle"
+                                value="#{form1702RT.form1702RTBean.payment.others}" 
+                                onkeyup="javascript:formatToUpperCase(event, this);"
+                                disabled="true"/></td>
+                        <td style="border: 1px solid #333333"><p:inputText
+                                style="width: 97%" styleClass="readOnlyStyle"
+                                value="#{form1702RT.form1702RTBean.payment.othersDraweeBank}" 
+                                onkeyup="javascript:formatToUpperCase(event, this);"
+                                disabled="true"/></td>
+                        <td style="border: 1px solid #333333"><p:inputText
+                                style="width: 97%"
+                                styleClass="readOnlyStyle"
+                                value="#{form1702RT.form1702RTBean.payment.othersNumber}" 
+                                disabled="true"/></td>
+                        <td style="border: 1px solid #333333" align="center" valign="middle">
+                            <p:calendar 
+                                id="dateOthersDate" onkeydown="return false;"
+                                value="#{form1702RT.form1702RTBean.payment.othersDate}"
+                                
+                                readonly="true"
+                                style="width:100%"
+                                styleClass="readOnlyStyle"
+                                disabled="true">
+                                <f:convertDateTime pattern="MM/dd/yyyy" type="date" timeZone="#{form1702RT.timeZone}" />
+                            </p:calendar>
+                        </td>
+                        <td style="border: 1px solid #333333"><p:inputText 
+                                style="width: 98%" styleClass="numberStyle readOnlyStyle" 
+                                value="#{form1702RT.form1702RTBean.payment.othersAmount}" 
+                                disabled="true"></p:inputText></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" cellspacing="0" cellpadding="0"
+                       style="border: 1px solid #333333">
+                    <tr>
+                        <td width="69%" valign="top" style="border: 1px solid #333333">
+                            Machine Validation/Revenue Official Receipts Details <i>(if
+                                not filed with an Authorized Agent Bank)</i> <br/> <br/> <br/>
+                        </td>
+                        <td valign="top" style="border: 1px solid #333333"><i>Stamp
+                                of receiving Office/AAB and Date of Receipt (RO's
+                                Signature/Bank Teller's Initial)</i> <br/> <br/> <br/> <br/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</ui:composition>

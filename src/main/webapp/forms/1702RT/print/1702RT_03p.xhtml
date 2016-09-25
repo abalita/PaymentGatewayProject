@@ -1,0 +1,785 @@
+<ui:composition
+xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:b="http://bootsfaces.net/ui">
+				<table id="table1"  width="766" cellpadding="2"  style="font-size: 12px; font-family: Arial, Helvetica, sans-serif" bgcolor="#CCCCCC">
+					
+					<tr>
+						<td bgcolor="White">
+							<table class="table1702RTWhite" style="border-bottom: none"
+								cellspacing="0" cellpadding="0" width="766">
+								<tr>
+									<td align="center" valign="middle"
+										style="width: 335px; border-bottom: none"><font size="5">
+											<b>Annual Income Tax Return</b> </font><br /> <font size="3"> 
+											<b>Page 3 - Schedules 1 &amp; 2</b></font>
+									</td>
+									<td align="center" valign="middle"
+										style="width: 130px; border-bottom: none">BIR Form No.<br />
+										<b style="font-size: 1.8em;">1702-RT</b><br />
+										June 2013</td>
+									<td align="right" valign="bottom"
+										style="width: 311px; border-bottom: none; vertical-align: top; padding-top: 10px">
+										<div style="text-align: right; height: 42px">
+											<img src="/efps-war/page?pageId=1702-RT06/13P3"
+												style="height:35px;width:300px;" /><br /> <span
+												style="margin-right: 6px;">1702-RT06/13P3</span>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<table class="table1702RTWhite" style="border-top: 1px solid black;"
+								width="100%">
+								<tr>
+									<td width="39%" style="border-top: none; padding-left: 5px;"
+										align="left"><b>Taxpayer Identification Number (TIN)</b>
+									</td>
+									<td width="71%" style="border-top: none; padding-left: 5px;"
+										align="left"><b>Registered Name</b>
+									</td>
+								</tr>
+								<tr>
+									<td width="39%" style="border: 1px solid black;" align="left">
+										<p:inputText  styleClass="readOnlyStyle"
+                                                                                              style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinA}" 
+											disabled="true"/>
+										<div
+											style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+										<p:inputText  styleClass="readOnlyStyle"
+											style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinB}" 
+											disabled="true"/>
+										<div
+											style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+										<p:inputText  styleClass="readOnlyStyle"
+											style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinC}" 
+											disabled="true"/>
+										<div
+											style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+										<p:inputText  styleClass="readOnlyStyle"
+											style="width: 22%; float: left;" value="#{form1702RT.form1702RTBean.branchCode}" 
+											disabled="true"/>
+									</td>
+									<td width="71%" style="border: 1px solid black;" align="left">
+										<p:inputText  styleClass="readOnlyStyle" style="width: 98%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.registeredName}" 
+										disabled="true"/>
+									</td>
+								</tr>
+							</table>
+							
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+						
+							<table cellspacing="0" width="766"
+								style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+						
+								<tr>
+									<td colspan="4">
+										<table cellspacing="0" cellpadding="0" width="766"
+											style="border: 1px solid #333333; font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+											<tr>
+												<td colspan="4">
+													<table class="table1702RT" width="100%" cellspacing="0" cellpadding="0"
+													style="border: 1px solid #333333" bgcolor="#CCCCCC">
+														<tr>
+															<td align="center">
+																	<b style="font-size: 13px">Schedule 1 - Sales/Revenues/Receipts/Fees </b><i>(Attach
+																		additional sheet/s, if necessary)</i>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+									
+										</table>
+									</td>
+								</tr>
+						
+								<tr>
+									<td>
+										<table width="100%" cellspacing="0" 
+										style="border: 1px solid #333333" bgcolor="#CCCCCC">
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>1 </b>Sale of Goods/Properties
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; " 
+														value="#{form1702RT.form1702RTBean.saleOfGoodsProperties}" 
+														
+														styleClass="sched1a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>2 </b>Sale of Services
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.saleOfServices}" 
+														
+														styleClass="sched1a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>3 </b>Lease of Properties
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.leaseOfProperties}" 
+														
+														styleClass="sched1a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>4 </b>Total<i> (Sum of Items 1 to 3)</i>
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  styleClass="readOnlyStyle sched1a numberStyle" style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.total}"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>5 </b>Less: Sales Returns, Allowances and Discounts
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.lessSalesReturnDiscounts}" 
+														
+														styleClass="sched1a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>6 Net Sales/Revenues/Receipts/Fees </b><i>(Item 4 Less Item 5)</i>
+														<i>(To Part IV Item 30)</i>
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  styleClass="readOnlyStyle sched1a numberStyle" style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.netSalesRevenuesReceiptsFeesSchedule1}"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+										</table>
+									</td>
+								</tr>
+						
+							</table>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+
+							<table cellspacing="0" width="766"
+								style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+						
+								<tr>
+									<td colspan="4">
+										<table cellspacing="0" cellpadding="0" width="766"
+											style="border: 1px solid #333333; font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+											<tr>
+												<td colspan="4">
+													<table class="table1702RT" width="100%" cellspacing="0" cellpadding="0"
+													style="border: 1px solid #333333" bgcolor="#CCCCCC">
+														<tr>
+															<td align="center">
+															<b style="font-size: 13px">Schedule 2 - Cost of Sales </b><i>(Attach
+															additional sheet/s, if necessary)</i>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+									
+										</table>
+									</td>
+								</tr>
+						
+							</table>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+
+							<table cellspacing="0" width="766"
+								style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+						
+								<tr>
+									<td colspan="4">
+										<table cellspacing="0" cellpadding="0" width="766"
+											style="border: 1px solid #333333; font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+											<tr>
+												<td colspan="4">
+													<table class="table1702RT" width="100%" cellspacing="0" cellpadding="0"
+													style="border: 1px solid #333333" bgcolor="#CCCCCC">
+														<tr>
+															<td align="center">
+														<b style="font-size: 13px">Schedule 2A - Cost of Sales (For
+															those Engaged in Trading)</b>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+									
+										</table>
+									</td>
+								</tr>
+						
+								<tr>
+									<td width="100%"
+										style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+										colspan="4">
+										<table width="100%" cellspacing="0" 
+										style="border: 1px solid #333333" bgcolor="#CCCCCC">
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>1 </b>Merchandise Inventory - Beginning
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.merchandiseInventoryBeginning}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>2 </b>Add: Purchases of Merchandise
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.addPurchaseOfMerchandise}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>3 </b>Total Goods Available for Sale <i>(Sum of Items 1
+														&amp; 2)</i>
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  styleClass="readOnlyStyle sched2a numberStyle" style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.totalGoodsAvailableForSale}"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>4 </b>Less: Merchandise Inventory, Ending
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.lessMerchandiseInventoryEnding}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>5 </b>Cost of Sales <i>(Item 3 Less Item 4) (To Schedule 2 Item 27 )</i>
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  styleClass="readOnlyStyle sched2a numberStyle" style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.costOfSales}"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+										</table>
+									</td>
+								</tr>
+						
+							</table>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+
+							<table cellspacing="0" width="766"
+								style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+						
+								<tr>
+									<td colspan="4">
+										<table cellspacing="0" cellpadding="0" width="766"
+											style="border: 1px solid #333333; font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+											<tr>
+												<td colspan="4">
+													<table class="table1702RT" width="100%" cellspacing="0" cellpadding="0"
+													style="border: 1px solid #333333" bgcolor="#CCCCCC">
+														<tr>
+															<td align="center">
+														<b style="font-size: 13px">Schedule 2B - Cost of Sales (For
+															those Engaged in Manufacturing)</b>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+									
+										</table>
+									</td>
+								</tr>
+						
+								<tr>
+									<td
+										style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px; width: 100%;"
+										colspan="4">
+										<table width="100%" cellspacing="0" 
+										style="border: 1px solid #333333" bgcolor="#CCCCCC">
+						
+											<tr>
+												<td valign="middle"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>6 </b>Direct Materials, Beginning
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.directMaterialsBeginning}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>7 </b>Add: Purchases of Direct Materials
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.addPurchasesOfDirectMaterials}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>8 </b>Materials Available for Use <i>(Sum of Items 6 &amp;
+														7)</i>
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  styleClass="readOnlyStyle sched2a numberStyle" style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.materialsAvalableForUse}"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>9 </b>Less: Direct Materials, Ending
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.lessDirectMaterialsEnding}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>10 </b>Raw Materials Used <i>(Item 8 Less Item 9)</i>
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  styleClass="readOnlyStyle sched2a numberStyle" style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.rawMaterialsUsed}"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>11 </b>Direct Labor
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.directLabor}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>12 </b>Manufacturing Overhead
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.manufacturingOverhead}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>13 </b>Total Manufacturing Cost <i>(Sum of Items 10, 11
+														&amp; 12)</i>
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  styleClass="readOnlyStyle sched2a numberStyle" style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.totalManufacturingCost}"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>14 </b>Add: Work in Process, Beginning
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.addWorkInProcessBeginning}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>15 </b>Less: Work in Process, Ending
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.lessWorkInProcessEnding}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>16 </b>Cost of Goods Manufactured <i>(Sum of Items 13
+														&amp; 14 Less Item 15)</i>
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  styleClass="readOnlyStyle sched2a numberStyle" style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.costOfGoodsManufactured}"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>17 </b>Finished Goods, Beginning
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.finishedGoodsBeginning}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>18 </b>Less: Finished Goods, Ending
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.lessFinishedGoodsEnding}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>19 Cost of Goods Manufactured and Sold </b><i>(Sum of
+														Items 16 &amp; 17 Less Item 18) (To Sched. 2 Item 27)</i>
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  styleClass="readOnlyStyle sched2a numberStyle" style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.costOfGoodsManufacturedAndSold}"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+										</table>
+									</td>
+								</tr>
+						
+							</table>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+
+							<table cellspacing="0" width="766"
+								style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+						
+								<tr>
+									<td colspan="4">
+										<table cellspacing="0" cellpadding="0" width="766"
+											style="border: 1px solid #333333; font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+											<tr>
+												<td colspan="4">
+													<table class="table1702RT" width="100%" cellspacing="0" cellpadding="0"
+													style="border: 1px solid #333333" bgcolor="#CCCCCC">
+														<tr>
+															<td align="center">
+																<b style="font-size: 12px;width:100%;">Schedule 2C - Cost of Services <br/>
+																	(For those Engaged in Services, indicate only those directly
+																	incurred or related to the gross revenue from rendition of
+																	services)
+																</b>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+									
+										</table>
+									</td>
+								</tr>
+						
+								<tr>
+									<td
+										style="border-bottom-width: 1px; border-top-style: none; border-right-style: none; border-bottom-color: #000000; border-top-width: 1px; border-bottom-style: none; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: none; border-right-width: 1px; border-left-width: 1px"
+										colspan="4">
+										<table width="100%" cellspacing="0" 
+										style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-color: #333333; border-left-width: 1px; border-top-width: 1px" bgcolor="#CCCCCC">
+						
+											<tr>
+												<td valign="middle"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>20 </b>Direct Charges - Salaries, Wages and Benefits
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.directChargesSalariesWagesAndBenefits}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>21 </b>Direct Charges - Materials, Supplies and Facilities
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.directChargesMaterialsSuppliesAndFacilities}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>22 </b>Direct Charges - Depreciation
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.directChargesDepreciation}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>23 </b>Direct Charges - Rental
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.directChargesRental}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>24 </b>Direct Charges - Outside Services
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.directChargesOutsideServices}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>25 </b>Direct Charges - Others
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.directChargesOthers}" 
+														
+														styleClass="sched2a numberStyle"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+											<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%">
+													<b>26 Total Cost of Services </b><i>(Sum of Items 20 to 25)
+														(To Item 27)</i>
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  styleClass="readOnlyStyle sched2a numberStyle" style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.costOfServices}"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+						
+										</table>
+									</td>
+								</tr>
+						
+							</table>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+
+							<table  cellspacing="0" width="766"
+								style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+						
+								<tr>
+									<td colspan="4">
+										<table cellspacing="0" cellpadding="0" width="766"
+											style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+											<tr>
+												<td colspan="4" style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #333333; border-top-color: #333333; border-right-color: #333333; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #333333; border-top-width: 1px">
+													<table class="table1702RT" width="100%" cellspacing="0" cellpadding="0"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-color: #333333; border-left-width: 1px; border-top-width: 1px" bgcolor="#CCCCCC">
+														<tr>
+												<td valign="middle" width="150"
+													style="border-bottom-width: 1px; border-bottom-style: solid; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-right-color: #000000; border-left-style: solid; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 70%; font-size:12px">
+													<b>27 Total Cost of Sales/Services </b><i>(Sum of Items 5, 19 &amp; 26, if applicable)</i>
+														<i>(To Part IV Item 31)</i>
+												</td>
+												<td valign="middle"
+													style="border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-left-color: #000000; border-top-color: #000000; border-left-style: solid; border-right-color: #000000; border-right-width: 1px; border-right-style: solid; border-left-width: 1px; border-bottom-color: #000000; border-top-width: 1px; width: 30%">
+													<p:inputText size="50"  styleClass="readOnlyStyle sched2a numberStyle" style="width: 98%; "
+														value="#{form1702RT.form1702RTBean.totalCostOfSalesServices}"
+														disabled="true"></p:inputText>
+												</td>
+											</tr>
+													</table>
+												</td>
+											</tr>
+									
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+</ui:composition>

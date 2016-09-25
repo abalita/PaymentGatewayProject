@@ -1,0 +1,824 @@
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:b="http://bootsfaces.net/ui">
+    <table width="766" cellpadding="2"  style="font-size: 12px; font-family: Arial, Helvetica, sans-serif" >
+        <tr>
+            <td bgcolor="White">
+                <table class="table1702RTWhite" style="border-bottom: none"
+                       cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="center" valign="middle"
+                            style="width: 335px; border-bottom: none"><font size="5">
+                                <b>Annual Income Tax Return</b> </font><br /> <font size="3">
+                                <b>Page 8 - Schedules 12 &amp; 13</b> </font></td>
+                        <td align="center" valign="middle"
+                            style="width: 130px; border-bottom: none">BIR Form No.<br />
+                            <b style="font-size: 1.8em;">1702-RT</b><br /> June 2013</td>
+                        <td align="right" valign="bottom"
+                            style="width: 311px; border-bottom: none; vertical-align: top; padding-top: 10px">
+                            <div style="text-align: right; height: 42px">
+                                <img src="/efps-war/page?pageId=1702-RT06/13P8"
+                                     style="height: 35px; width: 300px;" /><br /> <span
+                                     style="margin-right: 6px;">1702-RT06/13P8</span>
+                            </div></td>
+                    </tr>
+                </table>
+                <table class="table1702RTWhite" style="border-top: 1px solid black;"
+                       width="100%">
+                    <tr>
+                        <td width="39%" style="border-top: none; padding-left: 5px;"
+                            align="left"><b>Taxpayer Identification Number (TIN)</b></td>
+                        <td width="71%" style="border-top: none; padding-left: 5px;"
+                            align="left"><b>Registered Name</b></td>
+                    </tr>
+                    <tr>
+                        <td width="39%" style="border: 1px solid black;" align="left">
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; display: inline; float: left;"
+                                            value="#{form1702RT.form1702RTBean.tinA}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; display: inline; float: left;"
+                                            value="#{form1702RT.form1702RTBean.tinB}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; display: inline; float: left;"
+                                            value="#{form1702RT.form1702RTBean.tinC}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; float: left;" value="#{form1702RT.form1702RTBean.branchCode}"
+                                            disabled="true"/>
+                        </td>
+                        <td width="71%" style="border: 1px solid black;" align="left">
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 98%; display: inline; float: left;"
+                                            value="#{form1702RT.form1702RTBean.registeredName}" 
+                                            disabled="true"/></td>
+                    </tr>
+                </table></td>
+        </tr>
+        <tr>
+            <td>
+                <table width="766" border="0" cellspacing="0" cellpadding="0" class="table1702RT">
+                    <tr>
+                        <td  align="center"><b><font
+                                    size="2">Schedule 12 
+                                    - Supplemental Information </font><i>(Attach additional sheet/s, if necessary)</i></b>
+                        </td>
+                    </tr>
+
+                </table> 
+                <!--- Start of Items 1-4 -->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="766" border="0" class="table1702RT" align="left" cellpadding="0" cellspacing="1">
+                    <tr>
+                        <td width="19%" >
+                            <div align="left">
+                                <font size="2"><b>I) Gross Income/<br/>Receipts Subjected to<br/>Final Withholding</b></font>
+                            </div>
+                        </td>
+                        <td width="27%" >
+                            <div align="center">
+                                <font size="2">A) Exempt</font>
+                            </div>
+                        </td>
+
+                        <td width="27%" >
+                            <div align="center">
+                                <font size="2">B) Actual Amount/Fair Market Value/Net Capital Gains</font>
+                            </div>
+                        </td>
+                        <td width="27%" >
+                            <div align="center">
+                                <font size="2">C) Final Tax Withheld/Paid</font>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="19%" >
+                            <div align="left">
+                                <font size="2"><b>1</b> Interests</font>
+                            </div>
+                        </td>
+                        <td >
+                            <div align="center">
+                                <p:inputText value="#{form1702RT.form1702RTBean.exemptInterest}"
+
+                                               styleClass="baseinput numeric numberStyle" 
+                                               disabled="true">
+
+                                </p:inputText>
+                            </div>
+                        </td>
+                        <td >
+                            <div align="center">
+                                <p:inputText value="#{form1702RT.form1702RTBean.fairMarketValueInterest}"
+
+                                               styleClass="baseinput numeric numberStyle" 
+                                               disabled="true">
+
+                                </p:inputText>
+                            </div>
+                        </td>
+                        <td >
+                            <div align="center">
+                                <p:inputText value="#{form1702RT.form1702RTBean.finalTaxWthldInterest}"
+
+                                               styleClass="baseinput numeric sched12a numberStyle"
+                                               disabled="true">
+                                </p:inputText>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="19%" >
+                            <div align="left">
+                                <font size="2"><b>2</b> Royalties</font>
+                            </div>
+                        </td>
+                        <td >
+                            <div align="center">
+                                <p:inputText value="#{form1702RT.form1702RTBean.exemptRoyalties}"
+
+                                               styleClass="baseinput numeric numberStyle" 
+                                               disabled="true">
+
+                                </p:inputText>
+                            </div>
+                        </td>
+                        <td >
+                            <div align="center">
+                                <p:inputText value="#{form1702RT.form1702RTBean.fairMarketValueRoyalties}"
+
+                                               styleClass="baseinput numeric numberStyle" 
+                                               disabled="true">
+
+                                </p:inputText>
+                            </div>
+                        </td>
+                        <td >
+                            <div align="center">
+                                <p:inputText value="#{form1702RT.form1702RTBean.finalTaxWthldRoyalties}"
+
+                                               styleClass="baseinput numeric sched12a numberStyle" 
+                                               disabled="true">
+                                </p:inputText>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="19%" >
+                            <div align="left">
+                                <font size="2"><b>3</b> Dividends</font>
+                            </div>
+                        </td>
+                        <td >
+                            <div align="center">
+                                <p:inputText value="#{form1702RT.form1702RTBean.exemptDividends}"
+
+                                               styleClass="baseinput numeric numberStyle" 
+                                               disabled="true">
+
+                                </p:inputText>
+                            </div>
+                        </td>
+                        <td >
+                            <div align="center">
+                                <p:inputText value="#{form1702RT.form1702RTBean.fairMarketValueDividends}"
+
+                                               styleClass="baseinput numeric numberStyle" 
+                                               disabled="true">
+
+                                </p:inputText>
+                            </div>
+                        </td>
+                        <td >
+                            <div align="center">
+                                <p:inputText value="#{form1702RT.form1702RTBean.finalTaxWthldDividends}"
+
+                                               styleClass="baseinput numeric sched12a numberStyle"
+                                               disabled="true">
+                                </p:inputText>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="19%" >
+                            <div align="left">
+                                <font size="2"><b>4</b>
+                                    Prizes and Winnings</font>
+                            </div>
+                        </td>
+                        <td >
+                            <div align="center">
+                                <p:inputText value="#{form1702RT.form1702RTBean.exemptPrizesWinnings}"
+
+                                               styleClass="baseinput numeric numberStyle sched12b sched12ExemptTotal" 
+                                               disabled="true">
+
+                                </p:inputText>
+                            </div>
+                        </td>
+                        <td >
+                            <div align="center">
+                                <p:inputText value="#{form1702RT.form1702RTBean.fairMarketValuePrizesWinnings}"
+
+                                               styleClass="baseinput numeric numberStyle sched12c sched12ActualAmtTotal" 
+                                               disabled="true">
+
+                                </p:inputText>
+                            </div>
+                        </td>
+                        <td >
+                            <div align="center">
+                                <p:inputText value="#{form1702RT.form1702RTBean.finalTaxWthldPrizesWinnings}"
+
+                                               styleClass="baseinput numeric sched12a numberStyle sched12d sched12FinalTaxTotal"
+                                               disabled="true">
+                                </p:inputText>
+                            </div>
+                        </td>
+                    </tr>
+                </table> <!--- End of Items 1-4 --> <!--- Start of Items 5-9 -->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="position:relative;height:150px;">
+                    <div style="width: 767px;position:absolute;">
+                        <div style="float:left; width: 374px;">
+                            <table width="100%" class="table1702RT" cellpadding="0" cellspacing="1">
+                                <tr>
+                                    <td><font
+                                            size="2"><b>II)
+                                                Sale/Exchange of Real properties</b></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2"><b>5</b></font><font size="2" >&#160;Description of Property <i>(e.g. land, improvement, etc.)</i></font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font
+                                            size="2"><b>6</b></font><font
+                                            size="2" >&#160;OCT/TCT/CCT/Tax
+                                            Declaration No. </font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>									
+                                    <td><font
+                                            size="2"><b>7</b></font><font
+                                            size="2" >&#160;Certificate
+                                            Authorizing Registration (CAR) No </font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font
+                                            size="2"><b>8</b></font><font
+                                            size="2" >&#160;Actual
+                                            Amount/Fair Market Value/Net Capital Gains</font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput numberStyle"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font
+                                            size="2"><b>9</b></font><font
+                                            size="2" >&#160;Final
+                                            Tax Withheld/Paid</font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput numberStyle"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--  -->
+                        <!--p:panelSeries value="#{attachments.listOfRealPropertiesSalesExchange}"
+                                         var="realPropertiesSalesExchange" style="float:left; width: 384px;position:absolute;left:374px;"
+                                         varStatus="rownum" rows="2">
+                            <h:panelGroup>
+                                <div style="float: left; width: 192px">
+                                    <table width="100%" cellpadding="0" cellspacing="1" class="table1702RT" style="border-left:none;">
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <font size="2">
+                                                    <h:outputText value="#{realPropertiesSalesExchange.alphaCode}"/>) Sale/Exchange <h:outputText value="#{realPropertiesSalesExchange.numeralCode}"/> 
+                                                </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{realPropertiesSalesExchange.description}" onkeyup="javascript:formatToUpperCase(event, this);" styleClass="alphaNumOnly"
+                                                               disabled="true"/> 												
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{realPropertiesSalesExchange.taxDeclaration}" onkeyup="javascript:formatToUpperCase(event, this);" maxlength="20" 
+                                                               onkeydown="return NumOnly_keydown(event);"
+                                                               disabled="true"/> 
+                                            </td>
+                                        </tr>
+                                        <tr>									
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{realPropertiesSalesExchange.authorizingRegistration}" onkeyup="javascript:formatToUpperCase(event, this);" maxlength="20"
+                                                               onkeydown="return NumOnly_keydown(event);"
+                                                               disabled="true"/> 
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{realPropertiesSalesExchange.actualAmount}" styleClass="numberStyle"  
+                                                               disabled="true"/> 
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{realPropertiesSalesExchange.finalTaxWithheld}"
+
+                                                               styleClass="sched12a numberStyle"
+                                                               disabled="true"/> 
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                                </div>
+                            </h:panelGroup>
+                        </p:panelSeries-->
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="position:relative;height:175px;">
+                    <div style="width: 767px;position:absolute;">
+                        <div style="float:left; width: 374px;">
+                            <table width="100%" border="0" class="table1702RT" cellpadding="0" cellspacing="1" >
+                                <tr>
+                                    <td><font
+                                            size="2"><b>III)
+                                                Sale/Exchange of Shares of Stock</b></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2"><b>10</b></font><font size="2" >&#160;Kind<i>(PS/CS)</i>/Stock Certificate Series No. </font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font
+                                            size="2"><b>11</b></font><font
+                                            size="2" >&#160;Certificate Authorizing Registration (CAR) No.</font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>									
+                                    <td><font
+                                            size="2"><b>12</b></font><font
+                                            size="2" >&#160;Number of Shares </font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput numberStyle"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font
+                                            size="2"><b>13</b></font><font
+                                            size="2" >&#160;Date of Issue (MM/DD/YYYY)</font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput"
+                                                       disabled="true"/>
+                                        <br/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font
+                                            size="2"><b>14</b></font><span
+                                            style="font-size:12px;" >&#160;Actual
+                                            Amount/Fair Market Value/Net Capital Gains</span>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput numberStyle"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font
+                                            size="2"><b>15</b></font><font
+                                            size="2" >&#160;Final
+                                            Tax Withheld/Paid</font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput numberStyle"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--  -->
+                        <!--p:panelSeries value="#{attachments.listOfSharesOfStockSalesExchange}"
+                                         var="sharesOfStockSalesExchange" style="float:left; width: 384px;position:absolute;left:374px;"
+                                         varStatus="rownum" rows="2">
+                            <h:panelGroup>
+                                <div style="float: left; width: 192px">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="1" class="table1702RT" style="border-left:none;">
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <font size="2">
+                                                    <h:outputText value="#{sharesOfStockSalesExchange.alphaCode}"/>) Sale/Exchange <h:outputText value="#{sharesOfStockSalesExchange.numeralCode}"/> 
+                                                </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{sharesOfStockSalesExchange.kind}"
+                                                               disabled="true" size="2">
+                                                </p:inputText>
+                                                <p:inputText style="width:97px;" value="#{sharesOfStockSalesExchange.stockCertificate}"
+                                                               onkeyup="javascript:formatToUpperCase(event, this);"
+                                                               onkeydown="return NumOnly_keydown(event);"
+                                                               disabled="true"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{sharesOfStockSalesExchange.authorizingRegistration}" maxlength="20" onkeyup="javascript:formatToUpperCase(event, this);"
+                                                               onkeydown="return NumOnly_keydown(event);"
+                                                               disabled="true"/> 
+                                            </td>
+                                        </tr>
+                                        <tr>									
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{sharesOfStockSalesExchange.numberOfShares}"   styleClass="numberStyle"
+                                                               disabled="true"/> 
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <div style="height:24px;">
+                                                    <p:selectInputDate value="#{sharesOfStockSalesExchange.dateOfIssue}" renderAsPopup="true" onkeydown="return NumSlashOnly_keydown(event, this);"
+                                                                         styleClass="dateStyle" 
+                                                                         disabled="true" >
+                                                        <f:convertDateTime pattern="MM/dd/yyyy" type="date" timeZone="#{form1702RT.timeZone}" />
+                                                        <f:attribute name="sharesOfStockSalesExchangeAttr" value="#{sharesOfStockSalesExchange}" />
+                                                    </p:selectInputDate> 
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{sharesOfStockSalesExchange.actualAmount}" styleClass="numberStyle"  
+                                                               disabled="true"/> 
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{sharesOfStockSalesExchange.finalTaxWithheld}"
+
+                                                               styleClass="sched12a numberStyle"
+                                                               disabled="true"/> 
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                                </div>
+                            </h:panelGroup>
+                        </p:panelSeries-->
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="position:relative;height:130px;">
+                    <div style="width: 767px;position:absolute;">
+                        <div style="float:left; width: 374px;">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="1" class="table1702RT">
+                                <tr>
+                                    <td><font
+                                            size="2"><b>IV)
+                                                Other Income <i>(Specify)</i></b></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2"><b>16</b></font><font size="2" >&#160;Other Income Subject to Final Tax Under Sections 57(A)/127/others of the Tax Code, as amended<br/><i>(Specify)</i></font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput" onkeyup="javascript:formatToUpperCase(event, this);"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font
+                                            size="2"><b>17</b></font><span style="font-size:12px;">&#160;Actual Amount/Fair Market Value/Net Capital Gains</span>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput numberStyle"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>									
+                                    <td><font
+                                            size="2"><b>18</b></font><font
+                                            size="2" >&#160;Final Tax Withheld/Paid</font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput numberStyle"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--  -->
+                        <!--p:panelSeries value="#{attachments.listOfOtherIncome}"
+                                         var="otherIncome" style="float:left; width: 384px;position:absolute;left:374px;"
+                                         varStatus="rownum" rows="2">
+                            <h:panelGroup>
+                                <div style="float: left; width: 192px">
+                                    <table width="100%" cellpadding="0" cellspacing="1" class="table1702RT" style="border-left:none;">
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <font size="2">
+                                                    <h:outputText value="#{otherIncome.alphaCode}"/>) Other Income <h:outputText value="#{otherIncome.numeralCode}"/> 
+                                                </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{otherIncome.description}" styleClass="alphaNumOnly" onkeyup="javascript:formatToUpperCase(event, this);"
+                                                               disabled="true"/>
+                                                <br/><h:outputText value="hidden" style="visibility: hidden" />
+                                                <br/><h:outputText value="hidden" style="visibility: hidden" />											
+                                            </td>
+                                        </tr>
+                                        <tr>									
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{otherIncome.actualAmount}" styleClass="numberStyle"  
+                                                               disabled="true"/> 
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{otherIncome.finalTaxWithheld}"
+
+                                                               styleClass="sched12a numberStyle"
+                                                               disabled="true"/> 
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                                </div>
+                            </h:panelGroup>
+                        </p:panelSeries-->
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="766" class="table1702RT" id="part4Total" cellspacing="0"   style="border-collapse: collapse;">
+                    <tr>
+                        <td width="559" style="border: 1px solid black;"><b>19 Total Final Tax Withheld Paid </b><i>(Sum of Items 1C to 4C, 9A, 9B, 15A, 15B, 18A &amp; 18B)</i></td>
+                        <td width="207" style="border: 1px solid black;">
+                            <p:inputText style="width: 98%;"  value="#{form1702RT.form1702RTBean.totalFinalTaxWithheldPaid}"
+                                           styleClass="sched12a numberStyle readOnlyStyle" 
+                                           disabled="true"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="766" class="table1702RT" cellspacing="0">
+                    <tr>
+                        <td style="width: 100%; border: 2px solid black"
+                            align="center"><font size="2"><b>Schedule 13 - Gross
+                                    Income/Receipts Exempt from Income Tax</b></font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="766" class="table1702RT" cellspacing="0">
+                    <tr>
+                        <td style="width: 73%; border: 1px solid black"><b>1</b>
+                            Return of Premium <i>(Actual Amount/Fair Market Value)</i>
+                        </td>
+                        <td style="width: 27%; border: 1px solid black"
+                            align="center"><p:inputText value="#{form1702RT.form1702RTBean.returnOfPremium}"
+                                                      style="width:80%;"
+
+                                                      styleClass="sched13a numberStyle" 
+                                                      disabled="true"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="position:relative;height:140px;">
+                    <div style="width: 767px;position:absolute;">
+                        <div style="float:left; width: 374px;">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="1" class="table1702RT">
+                                <tr>
+                                    <td><font
+                                            size="2"><b>I) Personal/Real Properties Received <br /> thru Gifts, Bequests, and Devices</b></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2"><b>2</b></font><font size="2" >&#160;Description of Property <i>(e.g. land, improvement, etc.)</i></font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font
+                                            size="2"><b>3</b></font><font
+                                            size="2" >&#160;Modes of Transfer <i>(e.g Donation)</i></font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>									
+                                    <td><font
+                                            size="2"><b>4</b></font><font
+                                            size="2" >&#160;Certificate Authorizing Registration (CAR) No.</font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>									
+                                    <td><font
+                                            size="2"><b>5</b></font><font
+                                            size="2" >&#160;Actual Amount/Fair Market Value</font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput numberStyle"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--  -->
+                        <!--p:panelSeries value="#{attachments.listOfPersonalRealPropertiesReceived}"
+                                         var="personalRealPropertiesReceived" style="float:left; width: 384px;position:absolute;left:374px;"
+                                         varStatus="rownum" rows="2">
+                            <h:panelGroup>
+                                <div style="float: left; width: 192px">
+                                    <table width="100%" cellpadding="0" cellspacing="1" class="table1702RT" style="border-left:none;">
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <font size="2">
+                                                    <h:outputText value="#{personalRealPropertiesReceived.alphaCode}"/>) Personal/Real Properties <h:outputText value="#{personalRealPropertiesReceived.numeralCode}"/> 
+                                                    <br/><h:outputText value="hidden" style="visibility: hidden" />
+                                                </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{personalRealPropertiesReceived.description}" onkeyup="javascript:formatToUpperCase(event, this);"
+                                                               styleClass="alphaNumOnly"
+                                                               disabled="true"/> 
+                                            </td>
+                                        </tr>
+                                        <tr>									
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{personalRealPropertiesReceived.modeOfTransfer}" onkeyup="javascript:formatToUpperCase(event, this);"
+                                                               styleClass="alphaNumOnly"
+                                                               disabled="true"/> 
+                                            </td>
+
+                                        </tr>
+                                        <tr>									
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{personalRealPropertiesReceived.authorizingRegistration}" onkeyup="javascript:formatToUpperCase(event, this);"
+                                                               onkeydown="return NumOnly_keydown(event);"
+                                                               disabled="true"/> 
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{personalRealPropertiesReceived.value}"
+
+                                                               styleClass="sched13a numberStyle"
+                                                               disabled="true"/> 
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                                </div>
+                            </h:panelGroup>
+                        </p:panelSeries-->
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="position:relative;height:90px;">
+                    <div style="width: #{383 + 384}px;position:absolute;">
+                        <div style="float:left; width: 374px;">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="1" class="table1702RT">
+                                <tr>
+                                    <td><font
+                                            size="2"><b>II)
+                                                Other Exempt Income/Receipts</b></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2"><b>6</b></font><font size="2" >&#160;Other Exempt Income/Receipts Under <br /> Sec. 32 (B) of
+                                            the Tax Code, as amended <i>(Specify)</i></font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font
+                                            size="2"><b>7</b></font><font
+                                            size="2" >&#160;Actual Amount/Fair Market Value/Net Capital Gains</font>
+                                        <p:inputText size="2" style="visibility: hidden" styleClass="baseinput numberStyle"
+                                                       disabled="true"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--  -->
+                        <!--p:panelSeries value="#{attachments.listOfOtherExemptIncome}"
+                                         var="otherExemptIncome" style="float:left; width: 384px;position:absolute;left:374px;"
+                                         varStatus="rownum" rows="2">
+                            <h:panelGroup>
+                                <div style="float: left; width: 192px">
+                                    <table width="100%" cellpadding="0" cellspacing="1" class="table1702RT" style="border-left:none;">
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <font size="2">
+                                                    <h:outputText value="#{otherExemptIncome.alphaCode}"/>) Other Exempt Income <h:outputText value="#{otherExemptIncome.numeralCode}"/> 
+                                                </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{otherExemptIncome.description}" onkeyup="javascript:formatToUpperCase(event, this);"
+                                                               styleClass="alphaNumOnly"
+                                                               disabled="true"/>  
+                                                <br/><h:outputText value="hidden" style="visibility: hidden" />	
+                                            </td>
+                                        </tr>
+                                        <tr>									
+                                            <td style="text-align: center">
+                                                <p:inputText value="#{otherExemptIncome.actualAmount}"
+
+                                                               styleClass="sched13a numberStyle" 
+                                                               disabled="true"/> 
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                                </div>
+                            </h:panelGroup>
+                        </p:panelSeries-->
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="766" cellspacing="0" class="table1702RT">
+                    <tr>
+                        <td style="width: 73%; border: 1px solid black"><font size="2"><b>8</b>
+                                Total Income Receipts Exempt From Income Tax <i>(Sum
+                                    of Items 1, 5A, 5B, 7A &amp; 7B)</i></font>
+                        </td>
+                        <td style="width: 27%; border: 1px solid black"
+                            align="center"><p:inputText styleClass="readOnlyStyle sched13a numberStyle" 
+                                                      value="#{form1702RT.form1702RTBean.totalIncomeExemptFromTax}" style="width:80%; "
+                                                      disabled="true"/>
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</ui:composition>

@@ -1,0 +1,411 @@
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:b="http://bootsfaces.net/ui">
+    <table width="766" bgcolor="#CCCCCC">
+        <tr>
+            <td bgcolor="White">
+                <table class="table1702RTWhite" style="border-bottom: none"
+                       cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="center" valign="middle"
+                            style="width: 335px; border-bottom: none"><font size="5">
+                                <b>Annual Income Tax Return</b> </font><br /> <font size="3"> <b>Page
+                                    7 - Schedules 10  &amp; 11</b></font>
+                        </td>
+                        <td align="center" valign="middle"
+                            style="width: 130px; border-bottom: none">BIR Form No.<br />
+                            <b style="font-size: 1.8em;">1702-RT</b><br />
+                            June 2013</td>
+                        <td align="right" valign="bottom"
+                            style="width: 311px; border-bottom: none; vertical-align: top; padding-top: 10px">
+                            <div style="text-align: right; height: 42px">
+                                <img src="/efps-war/page?pageId=1702-RT06/13P7"
+                                     style="height:35px;width:300px;" /><br /> <span
+                                     style="margin-right: 6px;">1702-RT06/13P7</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table1702RTWhite" style="border-top: 1px solid black;"
+                       width="100%">
+                    <tr>
+                        <td width="39%" style="border-top: none; padding-left: 5px;"
+                            align="left"><b>Taxpayer Identification Number (TIN)</b>
+                        </td>
+                        <td width="71%" style="border-top: none; padding-left: 5px;"
+                            align="left"><b>Registered Name</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="39%" style="border: 1px solid black;" align="left">
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinA}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinB}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.tinC}" 
+                                            disabled="true"/>
+                            <div
+                                style="height: 100%; display: inline; float: left; vertical-align: center">-</div>
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 22%; float: left;" value="#{form1702RT.form1702RTBean.branchCode}" 
+                                            disabled="true"/>
+                        </td>
+                        <td width="71%" style="border: 1px solid black;" align="left">
+                            <p:inputText  styleClass="readOnlyStyle"
+                                            style="width: 98%; display: inline; float: left;" value="#{form1702RT.form1702RTBean.registeredName}" 
+                                            disabled="true"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="table1702RT" width="766" cellspacing="0"
+                       cellpadding="0">
+                    <tr>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    Schedule 10 - BALANCE SHEET</b>
+                            </font></td>
+                    </tr>
+                </table></td>
+        </tr>
+        <tr>
+            <td>
+                <table class="table1702RT" width="766" cellspacing="0"
+                       cellpadding="0">
+                    <tr>
+                        <td colspan="2" align="center"><span
+                                style="font-weight: bold;">Assets</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle"
+                            style="width: 480px; border-top: 2px solid #333333;"><span
+                                style="font-weight: bold; padding-left: 5px;">1</span> Current
+                            Assets</td>
+                        <td align="center" valign="middle"
+                            style="border-top: 2px solid black;"><font size="2">
+                                <b> <p:inputText size="20"  style="width: 98%;" value="#{form1702RT.form1702RTBean.currentAssets}" 
+
+                                                   styleClass="sched10a numberStyle largeNumber"
+                                                   disabled="true">
+
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">2</span> Long-Term
+                            Investment</td>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    <p:inputText size="20"  value="#{form1702RT.form1702RTBean.longTermInvestment}"
+                                                   style="width: 98%;" 
+                                                   styleClass="sched10a numberStyle largeNumber"
+                                                   disabled="true">
+
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">3</span> Property,
+                            Plant and Equipment - Net</td>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.netPropertyPlantAndEquipment}"
+                                                    style="width: 98%;" 
+                                                    styleClass="sched10a numberStyle largeNumber"
+                                                    disabled="true">
+
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">4</span> Long-Term
+                            Receivables</td>
+                        <td align="center" valign="middle"><p:inputText 
+                                size="20"   style="width: 98%;" value="#{form1702RT.form1702RTBean.longTermReceivables}"
+
+                                styleClass="sched10a numberStyle largeNumber" 
+                                disabled="true">
+
+                            </p:inputText></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">5</span> Intangible
+                            Assets</td>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.intangibleAssets}"
+                                                    style="width: 98%;" 
+                                                    styleClass="sched10a numberStyle largeNumber"
+                                                    disabled="true">
+
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">6</span> Other
+                            Assets</td>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.otherAssets}"
+                                                    style="width: 98%;" 
+                                                    styleClass="sched10a numberStyle largeNumber"
+                                                    disabled="true">
+
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">7 Total
+                                Assets</span> <span style="font-size: 9px; font-style: italic;">(Sum
+                                of Items 1 to 6)</span></td>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.totalAssets}"
+
+                                                    styleClass="readOnlyStyle sched10a numberStyle"
+                                                    style="width: 98%;"
+                                                    disabled="true">
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                </table></td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="table1702RT" width="100%" cellspacing="0"
+                       cellpadding="0">
+                    <tr>
+                        <td colspan="2" align="center"><span
+                                style="font-weight: bold;">Liabilities
+                                and Equity</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle"
+                            style="width: 480px; border-top: 2px solid #333333;"><span
+                                style="font-weight: bold; padding-left: 5px;">8</span> Current
+                            Liabilities</td>
+                        <td align="center" valign="middle"
+                            style="border-top: 2px solid black;"><font size="2">
+                                <b> <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.currentLiabilities}"
+                                                    style="width: 98%;" 
+                                                    styleClass="sched10b numberStyle largeNumber"
+                                                    disabled="true">
+
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">9</span> Long-Term
+                            Liabilities</td>
+                        <td align="center" valign="middle"><p:inputText value="#{form1702RT.form1702RTBean.longTermLiabilities}"
+                                                                          size="20"   style="width: 98%;" 
+                                                                          styleClass="sched10b numberStyle largeNumber"
+                                                                          disabled="true">
+
+                            </p:inputText></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">10</span> Deferred
+                            Credits</td>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.deferredCredits}"
+                                                    style="width: 98%;" 
+                                                    styleClass="sched10b numberStyle largeNumber"
+                                                    disabled="true">
+
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">11</span> Other
+                            Liabilities</td>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.otherLiabilities}"
+                                                    style="width: 98%;" 
+                                                    styleClass="sched10b numberStyle largeNumber"
+                                                    disabled="true">
+
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">12 Total
+                                Liabilities</span> <span style="font-size: 9px; font-style: italic;">(Sum
+                                of Items 8 to 11)</span></td>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.totalLiabilities}"
+
+                                                    styleClass="readOnlyStyle sched10b numberStyle" style="width: 98%"
+                                                    disabled="true">
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">13</span> Capital
+                            Stock</td>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.capitalStock}"
+                                                    style="width: 98%;" 
+                                                    styleClass="sched10b numberStyle largeNumber"
+                                                    disabled="true"> 
+
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">14</span>
+                            Additional Paid-in Capital</td>
+                        <td align="center" valign="middle"><p:inputText value="#{form1702RT.form1702RTBean.additionalPaidInCapital}"
+                                                                          size="20"   style="width: 98%;" 
+                                                                          styleClass="sched10b numberStyle largeNumber"
+                                                                          disabled="true">
+
+                            </p:inputText></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">15</span> Retained
+                            Earnings</td>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.retainedEarnings}"
+                                                    style="width: 98%;" 
+                                                    styleClass="sched10b numberStyle largeNumber negativeNumber"
+                                                    disabled="true">
+
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">16 Total
+                                Equity</span> <span style="font-size: 9px; font-style: italic;">(Sum
+                                of Items 13 to 15)</span></td>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.totalEquity}"
+
+                                                    styleClass="readOnlyStyle sched10b numberStyle" style="width: 98%"
+                                                    disabled="true">
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle" style="width: 480px"><span
+                                style="font-weight: bold; padding-left: 5px;">17 Total
+                                Liabilities and Equity</span> <span
+                                style="font-size: 9px; font-style: italic;">(Sum of Items
+                                12 &amp; 16)</span></td>
+                        <td align="center" valign="middle"><font size="2"> <b>
+                                    <p:inputText  size="20"  value="#{form1702RT.form1702RTBean.totalLiabilitiesAndEquity}"
+
+                                                    styleClass="readOnlyStyle sched10b numberStyle" style="width: 98%;"
+                                                    disabled="true">
+                                    </p:inputText> </b> </font></td>
+                    </tr>
+
+                </table></td>
+        </tr>
+        <tr>
+            <td>
+                <table cellspacing="0" cellpadding="0"
+                       style="border-collapse: collapse; border: 2px solid #333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 100%;">
+                    <tr>
+                        <td><b>Schedule 11-</b></td>
+                        <td>
+                            <div>
+                                <b> <p:selectManyCheckbox id="cbContributorType"                                                            
+                                                            value="#{form1702RT.form1702RTBean.capitalContributorTypeList}"
+                                                            disabled="true">
+                                        <f:selectItem itemValue="S" itemLabel="Stockholders" itemDisabled="true"/>
+                                        <f:selectItem itemValue="P" itemLabel="Partners" itemDisabled="true"/>
+                                        <f:selectItem itemValue="M"
+                                                      itemLabel="Members Information" itemDisabled="true"/>
+                                    </p:selectManyCheckbox>
+
+                                    <p:checkbox for="cbContributorType" itemIndex="0"/>
+                                    <p:checkbox for="cbContributorType" itemIndex="1"/>
+                                    <p:checkbox for="cbContributorType" itemIndex="2"/>
+                                </b>
+                            </div>
+                        </td>
+                        <td>(Top 20 Stockholders, partners or Members)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><small>(On column 3 enter the amount
+                                of capital contribution and on the last column enter the
+                                percentage this represents on the entire ownership)</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <table width="100%" style="border-collapse: collapse; border:none;border-top:2px solid black;border-bottom:1px solid balck;font-size: 13px; font-family: Arial, Helvetica, sans-serif;">
+                                <tr>
+                                    <td width="30%" align="center"
+                                        style="border:2px solid black;border-left:none;">REGISTERED
+                                        NAME</td>
+                                    <td width="30%" align="center"
+                                        style="border:2px solid black;">TIN</td>
+                                    <td width="30%" align="center"
+                                        style="border:2px solid black;">Capital
+                                        Contribution</td>
+                                    <td width="10%" align="center"
+                                        style="border:2px solid black;border-right:none;">%
+                                        to <br /> Total</td>
+                                </tr>
+                                <tr>
+                                    <td width="100%" style="border: 1px solid black;" colspan="4">
+                                        <p:dataTable value="#{form1702RT.form1702RTBean.sched11AdditionalAttachments}" var="stockholdersPartners" style="width: 100%" styleClass="table1702RT">
+                                            <p:column style="width: 30%; text-align: center">
+                                                <p:inputText style="width: 98%;" value="#{stockholdersPartners.registeredName}" styleClass="alphaNumOnly sched11"
+                                                               maxlength="#{form1702RT.form1702RTBean.registeredNameMaxLength}" 
+                                                               disabled="true"/>
+                                            </p:column>
+                                            <p:column style="width: 30%; text-align: center">
+                                                <p:inputText size="2" maxlength="3" value="#{stockholdersPartners.tin1}" disabled="true"
+                                                               onkeydown="return NumOnly_keydown(event);"
+                                                               styleClass="tinInput sched11">
+                                                </p:inputText> -
+                                                <p:inputText size="2" maxlength="3" value="#{stockholdersPartners.tin2}" disabled="true"
+                                                               onkeydown="return NumOnly_keydown(event);"
+                                                               styleClass="tinInput sched11">
+                                                </p:inputText> -
+                                                <p:inputText size="2" maxlength="3" value="#{stockholdersPartners.tin3}" disabled="true"
+                                                               onkeydown="return NumOnly_keydown(event);"
+                                                               styleClass="tinInput sched11">
+                                                </p:inputText> -
+                                                <p:inputText size="3" maxlength="3" value="#{stockholdersPartners.branchCode}" disabled="true"
+                                                               onkeydown="return NumOnly_keydown(event);"
+                                                               styleClass="tinInput sched11">
+                                                </p:inputText>
+                                            </p:column>
+                                            <p:column style="width: 30%; text-align: center">
+                                                <p:inputText  style="width: 98%;" styleClass="numberStyle sched11"  value="#{stockholdersPartners.capitalContribution}" 
+                                                                disabled="true"></p:inputText>
+                                            </p:column>
+                                            <p:column style="width: 10%; text-align: center">
+                                                <p:inputText maxlength="3" style="width: 98%;" styleClass="numberStyle sched11" value="#{stockholdersPartners.percentToTotal}"
+                                                               disabled="true"/>
+                                            </p:column>				
+                                        </p:dataTable>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</ui:composition>

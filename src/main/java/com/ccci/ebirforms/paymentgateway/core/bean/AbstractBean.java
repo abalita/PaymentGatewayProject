@@ -28,7 +28,7 @@ import java.util.logging.Logger;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.management.MBeanException;
-import com.ccci.ebirforms.paymentgateway.core.exception.eDSTException;
+import com.ccci.ebirforms.paymentgateway.core.exception.PaymentGatewayException;
 
 /**
  *
@@ -72,7 +72,7 @@ public class AbstractBean implements Serializable{
             }
         }
         
-        if (throwable instanceof eDSTException) {
+        if (throwable instanceof PaymentGatewayException) {
             errorCode = throwable.getMessage();
         }
         

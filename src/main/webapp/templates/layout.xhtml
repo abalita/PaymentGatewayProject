@@ -17,22 +17,22 @@
     <h:body>             
         <ui:include src="serviceAgreement.xhtml" />
         <p:layout fullPage="true" >
-            <p:layoutUnit position="north" styleClass="borderless" style="padding: 0; margin: 0;" gutter="0">                               
+            <p:layoutUnit position="north" styleClass="borderless" style="padding: 0; margin: 0; border: 0px" gutter="0">                               
                 <ui:include src="header.xhtml" />
                 <ui:insert name="header" />
             </p:layoutUnit>
 
 
-            <p:layoutUnit id="sideBarLeft" size="200" position="west" styleClass="borderless" gutter="0">
+            <p:layoutUnit id="sideBarLeft" size="15%" position="west" styleClass="borderless" gutter="0" style=" border: 0px">
                 <ui:insert name="sideBarLeft" />
             </p:layoutUnit>
 
-            <p:layoutUnit position="center" styleClass="borderless" style="padding: 0; margin: 0;" gutter="0">
+            <p:layoutUnit position="center" styleClass="borderless" style="padding: 5; margin: 0;  border: 0px" gutter="0">
                 <ui:insert name="content" />
 
             </p:layoutUnit>
 
-            <p:layoutUnit position="south" styleClass="borderless #bottomline" style="padding: 0;" gutter="0">
+            <p:layoutUnit position="south" styleClass="borderless #bottomline" style="padding: 0; border: 0px" gutter="0">
                 <ui:include src="footer.xhtml" />
                 <ui:insert name="footer" />
 
